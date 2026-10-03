@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #050816;
+  color: white;
+}
+
+nav {
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav div {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+main {
+  padding: 120px 8%;
+}
+
+main h1 {
+  font-size: 55px;
+  color: #7abfff;
+}
+
+main p {
+  max-width: 600px;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #287cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 70px 8%;
+  background: #090d1a;
+}
+
+section p {
+  color: #aaa;
+}
