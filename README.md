@@ -50,14 +50,14 @@ The **v2.2.0 Netlify release ZIP** is a *compiled website build*. It contains de
 
 To deploy that release manually, extract the ZIP and upload the **contents of the inner site folder** to Netlify. Do not upload the ZIP as though it were a source-code repository. If the editable source is added to GitHub separately, include its `package.json`, lockfile, `src/`, build configuration, and the appropriate source-level setup instructions.
 
-## Team — Interstellar Consortium
+## Team - Interstellar Consortium
 
-- **Ms. Amey** — Team Lead, Candidate Research & Live Pitch
-- **Mr. Irfan** — Frontend Engineering & Web UI/UX Architecture
-- **Ms. Noor** — Frontend Engineering & 3D Interactive Map
-- **Mr. Pradip** — Data Pipeline & Coordinate Verification
-- **Ms. Arpita** — SPHEREx Methodology & Presentation Script
-- **Ms. Ekaspreet** — Presentation Design & Pitch Deck Architecture
+- **Ms. Amey** - Team Lead, Candidate Research & Live Pitch
+- **Mr. Irfan** - Frontend Engineering & Web UI/UX Architecture
+- **Ms. Noor** - Frontend Engineering & 3D Interactive Map
+- **Mr. Pradip** - Data Pipeline & Coordinate Verification
+- **Ms. Arpita** - SPHEREx Methodology & Presentation Script
+- **Ms. Ekaspreet** - Presentation Design & Pitch Deck Architecture
 
 ## License and disclaimer
 
