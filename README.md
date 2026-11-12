@@ -46,7 +46,7 @@ React · TypeScript · Three.js / WebGL · Vite · Netlify · Python-based scien
 
 ## Deployment and source-code note
 
-The **v2.2.0 Netlify release ZIP** is a *compiled website build*. It contains deployable HTML, JavaScript, CSS, observation assets, and routing configuration; it is **not** the editable React/TypeScript source repository.
+The *website build* contains deployable HTML, JavaScript, CSS, observation assets, and routing configuration.
 
 To deploy that release manually, extract the ZIP and upload the **contents of the inner site folder** to Netlify. Do not upload the ZIP as though it were a source-code repository. If the editable source is added to GitHub separately, include its `package.json`, lockfile, `src/`, build configuration, and the appropriate source-level setup instructions.
 
