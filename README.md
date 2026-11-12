@@ -9,7 +9,7 @@
 
 SPHEREx Deep Space Explorer is an independent, browser-based astronomy research prototype inspired by NASA's SPHEREx mission and the search for distant Solar System objects. It combines a navigable 3D celestial map, coordinate-based archive exploration, real infrared observation visualizations, and a blink comparator in an accessible interface.
 
-Our goal is to make astronomical survey data easier for students, citizen scientists, and curious explorers to investigate—not to claim the discovery of Planet X.
+Our goal is to make astronomical survey data easier for students, citizen scientists, and curious explorers to investigate, not to claim the discovery of Planet X.
 
 ## Features
 
@@ -52,7 +52,7 @@ To deploy that release manually, extract the ZIP and upload the **contents of th
 
 ## Team — Interstellar Consortium
 
-- **Mr. Amey** — Team Lead, Candidate Research & Live Pitch
+- **Ms. Amey** — Team Lead, Candidate Research & Live Pitch
 - **Mr. Irfan** — Frontend Engineering & Web UI/UX Architecture
 - **Ms. Noor** — Frontend Engineering & 3D Interactive Map
 - **Mr. Pradip** — Data Pipeline & Coordinate Verification
