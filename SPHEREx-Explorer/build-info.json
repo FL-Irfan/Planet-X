@@ -1,0 +1,21 @@
+{
+  "version": "2.2.0",
+  "profile": "owner",
+  "release": "FOCUSED-COMPARISON",
+  "date": "2026-11-11",
+  "sourceCommit": "13311ca7fa7e1fa761d531c083e1d0e1d7d3ab2b",
+  "assets": [
+    "dataset-1BkYSWbR.js",
+    "index-A5EqTJrN.css",
+    "index-BbQh-WS0.js",
+    "react-C7bCtlt2.js",
+    "three-rCfILa1_.js"
+  ],
+  "assetSha256": {
+    "dataset-1BkYSWbR.js": "b912a2f400fc81374da64654e2790301632d66154392bda47946115e2b0626db",
+    "index-A5EqTJrN.css": "43159838a930de16cd614a0a26be02d67ebd946239a8de7be0ac447d3f0165f0",
+    "index-BbQh-WS0.js": "609975ea478d922e5bb500642b70d82455085ac9d49187a981a546f4b0d96338",
+    "react-C7bCtlt2.js": "479c8da9ce0e8e76e91eca8423e9294a899363fef32a3198c4fc9a1eec33f6f0",
+    "three-rCfILa1_.js": "b847a6bf839abc76b1f3987879e1c932184c1b31b59d0b9de50c814babc28125"
+  }
+}

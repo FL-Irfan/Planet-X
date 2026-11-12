@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 1,
+  "pairId": "epsilon-indi-b-d2-2",
+  "scope": "Numerical visual-comparison QA; not a moving-source or variability detection",
+  "width": 64,
+  "height": 64,
+  "pixelScaleArcsec": 6.15,
+  "sharedDisplay": {
+    "min": 0.21150292140775184,
+    "max": 1.3300383992417784,
+    "unit": "MJy/sr"
+  },
+  "frames": [
+    {
+      "id": "2025W17_4B_0222_4",
+      "observedAt": "2025-04-26T05:09:43.680Z",
+      "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W17_4B/l2b-v20-2025-240/2/level2_2025W17_4B_0222_4D2_spx_l2b-v20-2025-240.fits",
+      "sourceSha256": "ccc65858c10d7e0cec80682042348f7cf6f0bc2a727d19e078610453e3895026",
+      "arraySha256": "8c57a6c710e537e105d9fd49a7d1f80e4c520b2dab99cdbb4718f210ffc10ddf",
+      "targetWavelengthUm": 1.2449031581943137,
+      "targetBandwidthUm": 0.02966552031732438,
+      "wavelengthRangeKeptUm": [
+        1.2343435866125965,
+        1.2556181617589826
+      ],
+      "maskedFraction": 0.1396484375,
+      "wcsRoundTripMaxPixel": 1.9315120762132926e-08,
+      "psfAtFieldCenter": {
+        "plane": 84,
+        "samplingArcsec": 0.615,
+        "encircled50RadiusArcsec": 2.760824499787094,
+        "encircled80RadiusArcsec": 4.542417323058799,
+        "momentEquivalentFwhmArcsec": 7.259657177039746,
+        "model": "QR2 exposure-averaged PSF; not the newer recommended ePSF",
+        "normalizationBeforeClipping": 0.9999999403953552
+      },
+      "borderMedianMJySr": 0.2902307,
+      "zodiMedianMJySr": 0.15137504652911415,
+      "borderMinusZodiMedianMJySr": 0.1389908688730392,
+      "medianPropagatedDiagonalVariance": 0.00017526083475314958,
+      "neighborNoiseCorrelation": {
+        "vertical": 0.29529510636882395,
+        "horizontal": 0.29406741638855205
+      },
+      "sampledFlagCounts": {
+        "MP_TRANSIENT": 197,
+        "MP_OVERFLOW": 0,
+        "MP_SUR_ERROR": 95,
+        "MP_PHANTOM": 0,
+        "MP_REFERENCE": 0,
+        "MP_NONFUNC": 3,
+        "MP_DICHROIC": 0,
+        "MP_MISSING_DATA": 0,
+        "MP_HOT": 0,
+        "MP_COLD": 0,
+        "MP_FULLSAMPLE": 0,
+        "MP_PHANMISS": 0,
+        "MP_NONLINEAR": 0,
+        "MP_PERSIST": 10,
+        "MP_OUTLIER": 0,
+        "MP_SOURCE": 4096
+      },
+      "recommendedEpsfAtFieldCenter": {
+        "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/epsf/cal-epsf-v1-2026-191/2/epsf_D2_spx_cal-epsf-v1-2026-191.fits",
+        "sha256": "7b94af0250aa7e56a9e78af34ca2c1373985926c0a0f3263218d1b0ddc94a926",
+        "zoneIndex": 306,
+        "nativeCenter": [
+          1213.7857666015625,
+          1408.0714111328125
+        ],
+        "samplingArcsec": 1.23,
+        "encircled50RadiusArcsec": 3.6439892315394418,
+        "momentEquivalentFwhmArcsec": 8.870649844166474,
+        "normalizationBeforeClipping": 1.0000000000000002,
+        "kernelApplied": false,
+        "model": "Recommended QR3 ePSF, applicable to QR2; nearest zone, positive-clipped for shape diagnostics only"
+      },
+      "directBilinearVsPreparedMaxMJySr": 5.002895264727414e-09
+    },
+    {
+      "id": "2025W23_2B_0258_3",
+      "observedAt": "2025-06-06T17:22:21.299Z",
+      "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W23_2B/l2b-v20-2025-251/2/level2_2025W23_2B_0258_3D2_spx_l2b-v20-2025-251.fits",
+      "sourceSha256": "1a25fbc5be83f42f2eeca335b6bf433e62d8765a5a24cb8b1b56ec6b2de6317d",
+      "arraySha256": "571a04862ee946e01c391bd2366c0e3afcaa0b242d956ee481e7fa4430974c88",
+      "targetWavelengthUm": 1.244901201895444,
+      "targetBandwidthUm": 0.029766723220476136,
+      "wavelengthRangeKeptUm": [
+        1.2345298823848525,
+        1.2556400500922662
+      ],
+      "maskedFraction": 0.1396484375,
+      "wcsRoundTripMaxPixel": 1.2086657511684549e-08,
+      "psfAtFieldCenter": {
+        "plane": 84,
+        "samplingArcsec": 0.615,
+        "encircled50RadiusArcsec": 2.760824499787094,
+        "encircled80RadiusArcsec": 4.542417323058799,
+        "momentEquivalentFwhmArcsec": 7.259657177039746,
+        "model": "QR2 exposure-averaged PSF; not the newer recommended ePSF",
+        "normalizationBeforeClipping": 0.9999999403953552
+      },
+      "borderMedianMJySr": 0.27328681,
+      "zodiMedianMJySr": 0.13356941770176667,
+      "borderMinusZodiMedianMJySr": 0.1396831259444363,
+      "medianPropagatedDiagonalVariance": 0.00016884686467380378,
+      "neighborNoiseCorrelation": {
+        "vertical": 0.29629567526864736,
+        "horizontal": 0.29755019804916893
+      },
+      "sampledFlagCounts": {
+        "MP_TRANSIENT": 14,
+        "MP_OVERFLOW": 0,
+        "MP_SUR_ERROR": 6,
+        "MP_PHANTOM": 0,
+        "MP_REFERENCE": 0,
+        "MP_NONFUNC": 3,
+        "MP_DICHROIC": 0,
+        "MP_MISSING_DATA": 0,
+        "MP_HOT": 0,
+        "MP_COLD": 1,
+        "MP_FULLSAMPLE": 0,
+        "MP_PHANMISS": 0,
+        "MP_NONLINEAR": 0,
+        "MP_PERSIST": 10,
+        "MP_OUTLIER": 0,
+        "MP_SOURCE": 4096
+      },
+      "recommendedEpsfAtFieldCenter": {
+        "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/epsf/cal-epsf-v1-2026-191/2/epsf_D2_spx_cal-epsf-v1-2026-191.fits",
+        "sha256": "7b94af0250aa7e56a9e78af34ca2c1373985926c0a0f3263218d1b0ddc94a926",
+        "zoneIndex": 306,
+        "nativeCenter": [
+          1213.7857666015625,
+          1408.0714111328125
+        ],
+        "samplingArcsec": 1.23,
+        "encircled50RadiusArcsec": 3.6439892315394418,
+        "momentEquivalentFwhmArcsec": 8.870649844166474,
+        "normalizationBeforeClipping": 1.0000000000000002,
+        "kernelApplied": false,
+        "model": "Recommended QR3 ePSF, applicable to QR2; nearest zone, positive-clipped for shape diagnostics only"
+      },
+      "directBilinearVsPreparedMaxMJySr": 5.232461575133129e-09
+    }
+  ],
+  "comparisons": [
+    {
+      "referenceIndex": 0,
+      "comparisonIndex": 1,
+      "registration": {
+        "method": "Independent elliptical-Gaussian centroid fits on common-grid compact peaks, central target excluded; diagnostic only",
+        "matchedSourceCount": 13,
+        "sources": [
+          {
+            "a": {
+              "x": 8.462546001653354,
+              "y": 4.711354957160202,
+              "amplitude": 0.5780420703786756,
+              "sigmaX": 0.7785973902934641,
+              "sigmaY": 0.5922641185474188,
+              "amplitudeOverMedianNoise": 46.308751339242114,
+              "validPixels": 79,
+              "fitResidualRms": 0.02582399103162904
+            },
+            "b": {
+              "x": 8.378775914808928,
+              "y": 4.477856201176255,
+              "amplitude": 0.7175172788239526,
+              "sigmaX": 0.6761971191972046,
+              "sigmaY": 0.5471810869875741,
+              "amplitudeOverMedianNoise": 62.116444045298365,
+              "validPixels": 79,
+              "fitResidualRms": 0.019845233054581767
+            },
+            "dxPixels": -0.08377008684442622,
+            "dyPixels": -0.23349875598394654
+          },
+          {
+            "a": {
+              "x": 42.88792378620673,
+              "y": 8.64163611223813,
+              "amplitude": 0.6885274054464935,
+              "sigmaX": 0.6068892012546493,
+              "sigmaY": 0.5418923601907113,
+              "amplitudeOverMedianNoise": 51.14470760060786,
+              "validPixels": 81,
+              "fitResidualRms": 0.02241547275084337
+            },
+            "b": {
+              "x": 42.78090935404966,
+              "y": 8.677774790255516,
+              "amplitude": 0.6435005938952634,
+              "sigmaX": 0.590035110318064,
+              "sigmaY": 0.6437470308969373,
+              "amplitudeOverMedianNoise": 48.06661771355825,
+              "validPixels": 81,
+              "fitResidualRms": 0.024419064785694448
+            },
+            "dxPixels": -0.10701443215706519,
+            "dyPixels": 0.03613867801738557
+          },
+          {
+            "a": {
+              "x": 13.570908540264345,
+              "y": 21.29968719932667,
+              "amplitude": 1.0279613619597923,
+              "sigmaX": 0.7759308952670002,
+              "sigmaY": 0.6541574270032721,
+              "amplitudeOverMedianNoise": 79.68934221437624,
+              "validPixels": 75,
+              "fitResidualRms": 0.0398112467333219
+            },
+            "b": {
+              "x": 13.730560547851049,
+              "y": 21.55476893110341,
+              "amplitude": 0.8535218181746533,
+              "sigmaX": 0.8968824641154391,
+              "sigmaY": 0.605024629344195,
+              "amplitudeOverMedianNoise": 68.43415386234783,
+              "validPixels": 75,
+              "fitResidualRms": 0.05405573583721923
+            },
+            "dxPixels": 0.15965200758670406,
+            "dyPixels": 0.2550817317767411
+          },
+          {
+            "a": {
+              "x": 30.901930661228928,
+              "y": 21.878258043950634,
+              "amplitude": 0.3861325827299646,
+              "sigmaX": 0.6533192368358273,
+              "sigmaY": 0.730856184504273,
+              "amplitudeOverMedianNoise": 29.376086811432486,
+              "validPixels": 69,
+              "fitResidualRms": 0.044895053505169355
+            },
+            "b": {
+              "x": 31.01968117013839,
+              "y": 22.01996443873192,
+              "amplitude": 0.37258003782135024,
+              "sigmaX": 0.8347034371703551,
+              "sigmaY": 0.6859703011699042,
+              "amplitudeOverMedianNoise": 27.906938444667077,
+              "validPixels": 69,
+              "fitResidualRms": 0.04335569522589769
+            },
+            "dxPixels": 0.11775050890946304,
+            "dyPixels": 0.14170639478128777
+          },
+          {
+            "a": {
+              "x": 55.44674238101763,
+              "y": 23.456843155928983,
+              "amplitude": 1.455825388238593,
+              "sigmaX": 0.713742648294052,
+              "sigmaY": 0.7211623371436874,
+              "amplitudeOverMedianNoise": 88.23092122631182,
+              "validPixels": 76,
+              "fitResidualRms": 0.09781221135663982
+            },
+            "b": {
+              "x": 55.45219805514966,
+              "y": 23.543093276071104,
+              "amplitude": 1.7882782194487912,
+              "sigmaX": 0.651172618251286,
+              "sigmaY": 0.5936829945546424,
+              "amplitudeOverMedianNoise": 108.59814755911027,
+              "validPixels": 76,
+              "fitResidualRms": 0.08609209082618753
+            },
+            "dxPixels": 0.005455674132029742,
+            "dyPixels": 0.08625012014212174
+          },
+          {
+            "a": {
+              "x": 42.29978204934958,
+              "y": 31.502802988506208,
+              "amplitude": 1.0263259077219524,
+              "sigmaX": 0.7846146799817801,
+              "sigmaY": 0.6848901002902367,
+              "amplitudeOverMedianNoise": 74.62062542024341,
+              "validPixels": 63,
+              "fitResidualRms": 0.047286891316465955
+            },
+            "b": {
+              "x": 42.264660378984395,
+              "y": 31.563635195644242,
+              "amplitude": 1.043465874510888,
+              "sigmaX": 0.6807836249748952,
+              "sigmaY": 0.7917088319638605,
+              "amplitudeOverMedianNoise": 75.92581277058068,
+              "validPixels": 63,
+              "fitResidualRms": 0.03886957990944375
+            },
+            "dxPixels": -0.035121670365185764,
+            "dyPixels": 0.06083220713803428
+          },
+          {
+            "a": {
+              "x": 47.87851701390203,
+              "y": 31.916470279646383,
+              "amplitude": 2.315740277337153,
+              "sigmaX": 0.6797371132883495,
+              "sigmaY": 0.5207100417413428,
+              "amplitudeOverMedianNoise": 157.03941751187185,
+              "validPixels": 68,
+              "fitResidualRms": 0.04790396395914611
+            },
+            "b": {
+              "x": 48.2715766884473,
+              "y": 31.96011353872249,
+              "amplitude": 1.2521504298270156,
+              "sigmaX": 0.5732151881398718,
+              "sigmaY": 0.7596169077898167,
+              "amplitudeOverMedianNoise": 81.61741631391858,
+              "validPixels": 68,
+              "fitResidualRms": 0.04538975001659705
+            },
+            "dxPixels": 0.39305967454527035,
+            "dyPixels": 0.04364325907610578
+          },
+          {
+            "a": {
+              "x": 20.84284417311536,
+              "y": 32.51453753042907,
+              "amplitude": 0.17606001958473394,
+              "sigmaX": 0.8189048718039028,
+              "sigmaY": 0.46701686513766966,
+              "amplitudeOverMedianNoise": 13.750231133493914,
+              "validPixels": 81,
+              "fitResidualRms": 0.014354458902085603
+            },
+            "b": {
+              "x": 20.98708509863936,
+              "y": 32.65118313481277,
+              "amplitude": 0.20857293437011148,
+              "sigmaX": 0.6943772423711706,
+              "sigmaY": 0.523549958669282,
+              "amplitudeOverMedianNoise": 17.043826829379757,
+              "validPixels": 81,
+              "fitResidualRms": 0.012365445967548324
+            },
+            "dxPixels": 0.1442409255239987,
+            "dyPixels": 0.13664560438370188
+          },
+          {
+            "a": {
+              "x": 7.064140990833975,
+              "y": 35.44191312132147,
+              "amplitude": 3.852827328106823,
+              "sigmaX": 0.6436224365111132,
+              "sigmaY": 0.6365427099694719,
+              "amplitudeOverMedianNoise": 314.4342485846319,
+              "validPixels": 68,
+              "fitResidualRms": 0.16758272242463446
+            },
+            "b": {
+              "x": 6.931209894282219,
+              "y": 35.57884228768893,
+              "amplitude": 3.040079560946623,
+              "sigmaX": 0.6889455959073753,
+              "sigmaY": 0.6868465959495087,
+              "amplitudeOverMedianNoise": 242.85770250104073,
+              "validPixels": 68,
+              "fitResidualRms": 0.2507409157475966
+            },
+            "dxPixels": -0.13293109655175606,
+            "dyPixels": 0.13692916636745878
+          },
+          {
+            "a": {
+              "x": 22.689765186595512,
+              "y": 39.00394909555393,
+              "amplitude": 0.28012250217735135,
+              "sigmaX": 0.6446867514862714,
+              "sigmaY": 0.5687992063156708,
+              "amplitudeOverMedianNoise": 21.77298352032374,
+              "validPixels": 75,
+              "fitResidualRms": 0.01592185358720151
+            },
+            "b": {
+              "x": 22.834885872405458,
+              "y": 38.97113793656599,
+              "amplitude": 0.18735359736931878,
+              "sigmaX": 0.7704139282527674,
+              "sigmaY": 0.7881249578668531,
+              "amplitudeOverMedianNoise": 15.260366860683733,
+              "validPixels": 75,
+              "fitResidualRms": 0.012982886745555403
+            },
+            "dxPixels": 0.14512068580994608,
+            "dyPixels": -0.03281115898793985
+          },
+          {
+            "a": {
+              "x": 20.625399477583677,
+              "y": 46.04577111111457,
+              "amplitude": 5.399772605478093,
+              "sigmaX": 0.812148179952414,
+              "sigmaY": 0.584167226380361,
+              "amplitudeOverMedianNoise": 418.0098790738903,
+              "validPixels": 52,
+              "fitResidualRms": 0.022437290492090547
+            },
+            "b": {
+              "x": 20.729736293638318,
+              "y": 46.21752504564019,
+              "amplitude": 13.734689940194338,
+              "sigmaX": 0.6444680344435453,
+              "sigmaY": 0.5061377382339378,
+              "amplitudeOverMedianNoise": 1116.25157468606,
+              "validPixels": 52,
+              "fitResidualRms": 0.017269395910803405
+            },
+            "dxPixels": 0.10433681605464074,
+            "dyPixels": 0.1717539345256185
+          },
+          {
+            "a": {
+              "x": 35.12340720964153,
+              "y": 52.14112123226722,
+              "amplitude": 0.5110988620536667,
+              "sigmaX": 0.717368841551318,
+              "sigmaY": 0.9617105041943826,
+              "amplitudeOverMedianNoise": 38.75175532004706,
+              "validPixels": 73,
+              "fitResidualRms": 0.048819339147310355
+            },
+            "b": {
+              "x": 35.11679893081259,
+              "y": 51.91973868064703,
+              "amplitude": 0.5463623185017519,
+              "sigmaX": 0.569426603627757,
+              "sigmaY": 1.1036680313947447,
+              "amplitudeOverMedianNoise": 41.81349547319526,
+              "validPixels": 73,
+              "fitResidualRms": 0.047947626611236104
+            },
+            "dxPixels": -0.006608278828934999,
+            "dyPixels": -0.22138255162018794
+          },
+          {
+            "a": {
+              "x": 49.503036636025136,
+              "y": 54.87117903237967,
+              "amplitude": 1.495069598474031,
+              "sigmaX": 0.6656935169141245,
+              "sigmaY": 0.6660211510986063,
+              "amplitudeOverMedianNoise": 106.135167244028,
+              "validPixels": 53,
+              "fitResidualRms": 0.0499653520485671
+            },
+            "b": {
+              "x": 49.53317205631262,
+              "y": 55.01549652547729,
+              "amplitude": 2.27775947117077,
+              "sigmaX": 0.41946189730022343,
+              "sigmaY": 0.7585019155927386,
+              "amplitudeOverMedianNoise": 159.28295674361254,
+              "validPixels": 53,
+              "fitResidualRms": 0.028919728473330793
+            },
+            "dxPixels": 0.03013542028748617,
+            "dyPixels": 0.144317493097617
+          }
+        ],
+        "transformApplied": false,
+        "supportsSubpixelRegistration": true,
+        "medianOffsetPixels": [
+          0.03013542028748617,
+          0.08625012014212174
+        ],
+        "medianOffsetArcsec": 0.5618834264355552,
+        "residualRmsArcsec": 1.2251426362699196,
+        "residualMaxArcsec": 2.2473126570306565
+      },
+      "rawDifferenceMedianMJySr": -0.010792525000000025,
+      "rawDifferenceRmsMJySr": 0.08847957983825472,
+      "uncorrectedDiagonalNoiseResidualMedian": -0.5927110767906342,
+      "uncorrectedDiagonalNoiseResidualRobustScatter": 1.4143572317153752,
+      "robustAffineDiagnostic": {
+        "scale": 1.0462618325214637,
+        "offsetMJySr": -0.027735240497898828,
+        "applied": false
+      },
+      "differenceReady": false,
+      "differenceBlockers": [
+        "Spatially varying recommended ePSF has not been matched",
+        "Native-pixel and calibration covariance are not supplied in the diagonal VARIANCE extension",
+        "Background/photometric fit is exploratory and has not been validated as a correction"
+      ]
+    }
+  ],
+  "varianceAssumption": "Squared bilinear weights with independent native-pixel noise. Adjacent-output covariance reported; no independent pixel significance is claimed. Native covariance and calibration terms remain unknown.",
+  "zodiacalTreatment": "Provided ZODI model inspected but not subtracted. IMAGE remains the calibrated archive value.",
+  "orientation": "Astropy TAN north-up/east-left; JSON row order flipped from FITS to display. WCS round-trip tests coordinate mechanics, not external astrometry.",
+  "scienceConclusion": "Suitable for qualified visual inspection. Quantitative subtraction, weighted stacking and significant variability are not certified."
+}

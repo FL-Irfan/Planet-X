@@ -1,0 +1,2145 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-10T22:00:00Z",
+  "pairs": [
+    {
+      "id": "m101-2026-d2-cwave",
+      "name": "M101 central field \u00b7 real SPHEREx",
+      "ra": 210.80227,
+      "dec": 54.34895,
+      "frame": "ICRS",
+      "coordinateEpoch": "ICRS fixed sky field",
+      "sourceKind": "observation",
+      "status": "ready",
+      "sourceRelease": "SPHEREx Quick Release 2 (IRSA)",
+      "sourceDoi": "https://doi.org/10.26131/IRSA652",
+      "credit": "SPHEREx / NASA / JPL-Caltech; served by Caltech/IPAC IRSA",
+      "acknowledgementUrl": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_qr.html",
+      "width": 96,
+      "height": 96,
+      "pixelScaleArcsec": 6.15,
+      "commonDisplay": {
+        "min": 0.1950004382134622,
+        "max": 3.825568042022626,
+        "unit": "MJy/sr"
+      },
+      "alignment": {
+        "method": "Astropy celestial WCS with SIP distortion; bilinear reprojection onto one ICRS TAN grid",
+        "orientation": "north-up, east-left",
+        "rowOrder": "north-to-south",
+        "residualAstrometryArcsec": 0.7086109350263682,
+        "wcsHeader": {
+          "WCSAXES": 2,
+          "CRPIX1": 48.5,
+          "CRPIX2": 48.5,
+          "CDELT1": -0.0017083333333333,
+          "CDELT2": 0.0017083333333333,
+          "CUNIT1": "deg",
+          "CUNIT2": "deg",
+          "CTYPE1": "RA---TAN",
+          "CTYPE2": "DEC--TAN",
+          "CRVAL1": 210.80227,
+          "CRVAL2": 54.34895,
+          "LONPOLE": 180.0,
+          "LATPOLE": 54.34895,
+          "MJDREF": 0.0,
+          "RADESYS": "ICRS"
+        }
+      },
+      "quality": {
+        "commonValidFraction": 0.7501085069444444,
+        "wavelengthDifferenceAtTargetUm": 0.00047573350598639763,
+        "maxWavelengthDifferenceBandwidthFraction": 0.25,
+        "maxKeptWavelengthDifferenceUm": 0.0006406024319127734,
+        "motionMeasured": false,
+        "significanceVerified": false,
+        "scientificDifferencingReady": false,
+        "differenceBlockers": [
+          "Background/photometric fit is exploratory and has not been validated as a correction",
+          "Native-pixel and calibration covariance are not supplied in the diagonal VARIANCE extension",
+          "Spatially varying recommended ePSF has not been matched"
+        ]
+      },
+      "warnings": [
+        "Real SPHEREx quick-release observations. Calibration and image-quality artifacts may remain.",
+        "Each detector pixel has its own wavelength. The pair uses nearby, not identical, effective wavelengths; incompatible pixels are masked.",
+        "Wavelengths use the pinned CWAVE/CBAND spectral calibration product, matched to every exposure. No 102-channel spectrum is inferred from a single frame.",
+        "Both frames use the same MJy/sr display range. No independent per-frame brightness normalization is applied. Zodiacal background has not been subtracted.",
+        "Independent compact-source centroid fits and PSF/noise diagnostics are documented in the linked numerical report. These are visual-comparison checks, not a significant-change measurement.",
+        "Reprojection interpolates pixels and correlates noise. This viewer does not establish statistically significant motion or variability."
+      ],
+      "interpretation": "The field contains the central region of M101 (the Pinwheel Galaxy). Compare the galaxy and surrounding sources at two real observation dates. No motion or statistically verified brightness change is claimed. Differences may reflect noise, residual alignment, wavelength response or calibration.",
+      "documentationUrls": [
+        "https://caltech-ipac.github.io/irsa-tutorials/spherex-intro/",
+        "https://caltech-ipac.github.io/spherex-archive-documentation/spherex-data-access/",
+        "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/SPHEREx_Expsupp_QR.pdf"
+      ],
+      "frames": [
+        {
+          "id": "2026W20_2A_0464_1",
+          "observedAt": "2026-05-17T10:53:45.256Z",
+          "mjd": 61177.453996019,
+          "wavelengthUm": 1.4199391576816969,
+          "bandwidthUm": 0.03471969150553011,
+          "detector": 2,
+          "processingVersion": "6.5.7",
+          "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2026W20_2A/l2b-v25-2026-140/2/level2_2026W20_2A_0464_1D2_spx_l2b-v25-2026-140.fits",
+          "sha256": "93a0426038a1562757c6d225152c830185c13070c99a34bf312f1939b5a5db1e",
+          "spectralCalibration": {
+            "method": "CWAVE/CBAND; bilinear interpolation at zero-based detector coordinates [y,x]",
+            "sourceUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/spectral_wcs/cal-wcs-v4-2025-254/2/spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+            "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+            "orientation": "sky",
+            "association": "Pinned product; X/Y/VALUES lookup table exactly matches exposure"
+          },
+          "extensions": {
+            "IMAGE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "FLAGS": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": ""
+            },
+            "VARIANCE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy2 / sr2"
+            },
+            "ZODI": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "PSF": {
+              "shape": [
+                121,
+                101,
+                101
+              ],
+              "unit": ""
+            },
+            "WCS-WAVE": {
+              "shape": [
+                1
+              ],
+              "unit": null
+            }
+          },
+          "sourceWcsHeader": {
+            "WCSAXES": 2,
+            "CRPIX1": 1020.5,
+            "CRPIX2": 1020.5,
+            "PC1_1": 0.00126356848643,
+            "PC1_2": -0.00114413895875,
+            "PC2_1": -0.00114252559124,
+            "PC2_2": -0.00126694608119,
+            "CDELT1": 1.0,
+            "CDELT2": 1.0,
+            "CUNIT1": "deg",
+            "CUNIT2": "deg",
+            "CTYPE1": "RA---TAN-SIP",
+            "CTYPE2": "DEC--TAN-SIP",
+            "CRVAL1": 212.448464143,
+            "CRVAL2": 52.9474314544,
+            "LONPOLE": 180.0,
+            "LATPOLE": 52.9474314544,
+            "TIMESYS": "UTC",
+            "MJDREF": 0.0,
+            "DATE-OBS": "2026-05-17T10:53:45.256",
+            "MJD-OBS": 61177.453996019,
+            "DATE-BEG": "2026-05-17T10:53:45.256",
+            "MJD-BEG": 61177.453996019,
+            "DATE-AVG": "2026-05-17T10:54:42.815",
+            "MJD-AVG": 61177.454662208,
+            "DATE-END": "2026-05-17T10:55:40.374",
+            "MJD-END": 61177.455328397,
+            "XPOSURE": 113.5826,
+            "TELAPSE": 118.1873,
+            "RADESYS": "ICRS",
+            "A_ORDER": 3,
+            "A_0_0": -0.103167279349,
+            "A_0_1": -0.000172590352515,
+            "A_0_2": -1.8247706374e-08,
+            "A_0_3": -3.55980460876e-11,
+            "A_1_0": -0.000138172032941,
+            "A_1_1": 3.94082157575e-06,
+            "A_1_2": 6.27416530107e-10,
+            "A_2_0": -6.04194123106e-08,
+            "A_2_1": 3.15824290753e-11,
+            "A_3_0": 5.8105309766e-10,
+            "B_ORDER": 3,
+            "B_0_0": -1.19533204079,
+            "B_0_1": -9.57250005925e-06,
+            "B_0_2": 1.93566797356e-06,
+            "B_0_3": 4.96001322028e-10,
+            "B_1_0": -3.74905377972e-05,
+            "B_1_1": 4.22623383788e-08,
+            "B_1_2": -1.22964568325e-11,
+            "B_2_0": 6.5512002604e-06,
+            "B_2_1": 6.37689602965e-10,
+            "B_3_0": 1.70398987554e-11,
+            "AP_ORDER": 3,
+            "AP_0_0": 0.103469179757,
+            "AP_0_1": 0.000172286936731,
+            "AP_0_2": 1.68037950422e-08,
+            "AP_0_3": 3.51541057227e-11,
+            "AP_1_0": 0.000132512377064,
+            "AP_1_1": -3.9246966353e-06,
+            "AP_1_2": -6.02051075764e-10,
+            "AP_2_0": 5.89078207682e-08,
+            "AP_2_1": -3.2754390376e-11,
+            "AP_3_0": -5.53542399397e-10,
+            "BP_ORDER": 3,
+            "BP_0_0": 1.19025774413,
+            "BP_0_1": 4.02129932899e-06,
+            "BP_0_2": -1.92359424053e-06,
+            "BP_0_3": -4.86761883467e-10,
+            "BP_1_0": 3.60947862369e-05,
+            "BP_1_1": -4.48934189235e-08,
+            "BP_1_2": 1.21494897014e-11,
+            "BP_2_0": -6.53368561751e-06,
+            "BP_2_1": -5.58745714773e-10,
+            "BP_3_0": -1.75373160628e-11
+          },
+          "zodiacalSubtractionApplied": false,
+          "varianceUsedForMaskOnly": true,
+          "quality": {
+            "sourceMaskedFraction": 0.041219482891195695,
+            "maskedFraction": 0.24989149305555558,
+            "wavelengthMinUm": 1.4008960077316566,
+            "wavelengthMaxUm": 1.4395496006030686
+          },
+          "dataUrl": "/observations/m101-2026-d2-cwave/frame-1.json",
+          "dataSha256": "3f5c96314a45845f84ac51fae91d2743d8dc951f32463fb3a0023ff9df32c5d8"
+        },
+        {
+          "id": "2026W26_1A_0178_1",
+          "observedAt": "2026-06-22T20:21:33.190Z",
+          "mjd": 61213.84830081,
+          "wavelengthUm": 1.4204148911876833,
+          "bandwidthUm": 0.03477435475816719,
+          "detector": 2,
+          "processingVersion": "6.5.7",
+          "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2026W26_1A/l2b-v25-2026-180/2/level2_2026W26_1A_0178_1D2_spx_l2b-v25-2026-180.fits",
+          "sha256": "41bb2cf1d53f196f5ac6b31d649594dd74b3005e837dfb3858075d0bf6bcb6de",
+          "spectralCalibration": {
+            "method": "CWAVE/CBAND; bilinear interpolation at zero-based detector coordinates [y,x]",
+            "sourceUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/spectral_wcs/cal-wcs-v4-2025-254/2/spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+            "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+            "orientation": "sky",
+            "association": "Pinned product; X/Y/VALUES lookup table exactly matches exposure"
+          },
+          "extensions": {
+            "IMAGE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "FLAGS": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": ""
+            },
+            "VARIANCE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy2 / sr2"
+            },
+            "ZODI": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "PSF": {
+              "shape": [
+                121,
+                101,
+                101
+              ],
+              "unit": ""
+            },
+            "WCS-WAVE": {
+              "shape": [
+                1
+              ],
+              "unit": null
+            }
+          },
+          "sourceWcsHeader": {
+            "WCSAXES": 2,
+            "CRPIX1": 1020.5,
+            "CRPIX2": 1020.5,
+            "PC1_1": 0.00126331484502,
+            "PC1_2": -0.00114478672545,
+            "PC2_1": -0.00114269473207,
+            "PC2_2": -0.00126661854448,
+            "CDELT1": 1.0,
+            "CDELT2": 1.0,
+            "CUNIT1": "deg",
+            "CUNIT2": "deg",
+            "CTYPE1": "RA---TAN-SIP",
+            "CTYPE2": "DEC--TAN-SIP",
+            "CRVAL1": 212.453241321,
+            "CRVAL2": 52.9429476269,
+            "LONPOLE": 180.0,
+            "LATPOLE": 52.9429476269,
+            "TIMESYS": "UTC",
+            "MJDREF": 0.0,
+            "DATE-OBS": "2026-06-22T20:21:33.190",
+            "MJD-OBS": 61213.84830081,
+            "DATE-BEG": "2026-06-22T20:21:33.190",
+            "MJD-BEG": 61213.84830081,
+            "DATE-AVG": "2026-06-22T20:22:30.749",
+            "MJD-AVG": 61213.848966999,
+            "DATE-END": "2026-06-22T20:23:28.308",
+            "MJD-END": 61213.849633189,
+            "XPOSURE": 113.5826,
+            "TELAPSE": 118.1873,
+            "RADESYS": "ICRS",
+            "A_ORDER": 3,
+            "A_0_0": -0.0229326406492,
+            "A_0_1": 0.000147673923657,
+            "A_0_2": -1.69314942084e-08,
+            "A_0_3": -2.01390234146e-11,
+            "A_1_0": -0.000104583002354,
+            "A_1_1": 3.94421509813e-06,
+            "A_1_2": 6.10619863484e-10,
+            "A_2_0": -4.80421979661e-08,
+            "A_2_1": 5.11723555727e-11,
+            "A_3_0": 5.84231278728e-10,
+            "B_ORDER": 3,
+            "B_0_0": -1.09139487148,
+            "B_0_1": -0.000142163429745,
+            "B_0_2": 1.93335581845e-06,
+            "B_0_3": 4.84788862094e-10,
+            "B_1_0": -0.000122563521202,
+            "B_1_1": 3.04683885163e-08,
+            "B_1_2": 1.31852664037e-12,
+            "B_2_0": 6.54213961502e-06,
+            "B_2_1": 6.31710939571e-10,
+            "B_3_0": -8.89589164085e-12,
+            "AP_ORDER": 3,
+            "AP_0_0": 0.0227513741384,
+            "AP_0_1": -0.000147770455466,
+            "AP_0_2": 1.77261548989e-08,
+            "AP_0_3": 2.01385174509e-11,
+            "AP_1_0": 9.93010993874e-05,
+            "AP_1_1": -3.92848539078e-06,
+            "AP_1_2": -5.85396574075e-10,
+            "AP_2_0": 4.86779869059e-08,
+            "AP_2_1": -5.15226773846e-11,
+            "AP_3_0": -5.56670738909e-10,
+            "BP_ORDER": 3,
+            "BP_0_0": 1.08654742542,
+            "BP_0_1": 0.000137043747884,
+            "BP_0_2": -1.92214804672e-06,
+            "BP_0_3": -4.75885711557e-10,
+            "BP_1_0": 0.000122280399107,
+            "BP_1_1": -2.92989969815e-08,
+            "BP_1_2": -1.34986816636e-12,
+            "BP_2_0": -6.52518237776e-06,
+            "BP_2_1": -5.53018068053e-10,
+            "BP_3_0": 8.28822537394e-12
+          },
+          "zodiacalSubtractionApplied": false,
+          "varianceUsedForMaskOnly": true,
+          "quality": {
+            "sourceMaskedFraction": 0.03582155901576317,
+            "maskedFraction": 0.24989149305555558,
+            "wavelengthMinUm": 1.4012326968518765,
+            "wavelengthMaxUm": 1.4397080920231864
+          },
+          "dataUrl": "/observations/m101-2026-d2-cwave/frame-2.json",
+          "dataSha256": "c524307112406cb8b68b728fd8d925686707068a35b47e05916dcd4a9f3888fd"
+        }
+      ],
+      "validation": {
+        "reportUrl": "/observations/m101-2026-d2-cwave/validation.json",
+        "matchedSources": 10,
+        "residualRmsArcsec": 0.7086109350263682,
+        "medianOffsetArcsec": 0.060467173238818284,
+        "differenceBlockers": [
+          "Background/photometric fit is exploratory and has not been validated as a correction",
+          "Native-pixel and calibration covariance are not supplied in the diagonal VARIANCE extension",
+          "Spatially varying recommended ePSF has not been matched"
+        ]
+      },
+      "legacyIds": [
+        "m101-2026-d2"
+      ],
+      "overlayUrl": "/observations/m101-2026-d2-cwave/allwise.json"
+    },
+    {
+      "id": "epsilon-indi-b-d2-2",
+      "name": "Epsilon Indi B field \u00b7 real SPHEREx",
+      "ra": 331.0954014999604,
+      "dec": -56.800220025797096,
+      "frame": "ICRS",
+      "coordinateEpoch": "ICRS fixed field at midpoint proper-motion guide position; no observer parallax correction",
+      "sourceKind": "observation",
+      "status": "ready",
+      "sourceRelease": "SPHEREx Quick Release 2 (IRSA)",
+      "sourceDoi": "https://doi.org/10.26131/IRSA652",
+      "credit": "SPHEREx / NASA / JPL-Caltech; served by Caltech/IPAC IRSA",
+      "acknowledgementUrl": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_qr.html",
+      "width": 64,
+      "height": 64,
+      "pixelScaleArcsec": 6.15,
+      "commonDisplay": {
+        "min": 0.21150292140775184,
+        "max": 1.3300383992417784,
+        "unit": "MJy/sr"
+      },
+      "alignment": {
+        "method": "Astropy celestial WCS with SIP distortion; bilinear reprojection onto one ICRS TAN grid",
+        "orientation": "north-up, east-left",
+        "rowOrder": "north-to-south",
+        "residualAstrometryArcsec": 1.2251426362699196,
+        "wcsHeader": {
+          "WCSAXES": 2,
+          "CRPIX1": 32.5,
+          "CRPIX2": 32.5,
+          "CDELT1": -0.0017083333333333,
+          "CDELT2": 0.0017083333333333,
+          "CUNIT1": "deg",
+          "CUNIT2": "deg",
+          "CTYPE1": "RA---TAN",
+          "CTYPE2": "DEC--TAN",
+          "CRVAL1": 331.09540149996,
+          "CRVAL2": -56.800220025797,
+          "LONPOLE": 180.0,
+          "LATPOLE": -56.800220025797,
+          "MJDREF": 0.0,
+          "RADESYS": "ICRS"
+        }
+      },
+      "quality": {
+        "commonValidFraction": 0.8603515625,
+        "wavelengthDifferenceAtTargetUm": 1.9562988697874317e-06,
+        "maxWavelengthDifferenceBandwidthFraction": 0.25,
+        "maxKeptWavelengthDifferenceUm": 0.0004916763359423815,
+        "motionMeasured": false,
+        "significanceVerified": false,
+        "scientificDifferencingReady": false,
+        "differenceBlockers": [
+          "Background/photometric fit is exploratory and has not been validated as a correction",
+          "Native-pixel and calibration covariance are not supplied in the diagonal VARIANCE extension",
+          "Spatially varying recommended ePSF has not been matched"
+        ]
+      },
+      "warnings": [
+        "Real SPHEREx quick-release observations. Calibration and image-quality artifacts may remain.",
+        "Each detector pixel has its own wavelength. The pair uses nearby, not identical, effective wavelengths; incompatible pixels are masked.",
+        "Wavelengths use the pinned CWAVE/CBAND spectral calibration product, matched to every exposure. No 102-channel spectrum is inferred from a single frame.",
+        "Both frames use the same MJy/sr display range. No independent per-frame brightness normalization is applied. Zodiacal background has not been subtracted.",
+        "Independent compact-source centroid fits and PSF/noise diagnostics are documented in the linked numerical report. These are visual-comparison checks, not a significant-change measurement.",
+        "Reprojection interpolates pixels and correlates noise. This viewer does not establish statistically significant motion or variability."
+      ],
+      "interpretation": "Inspect actual SPHEREx pixels around Epsilon Indi B. The target itself has not been independently identified or measured in these frames. No significant motion or brightness change is claimed.",
+      "documentationUrls": [
+        "https://caltech-ipac.github.io/irsa-tutorials/spherex-intro/",
+        "https://caltech-ipac.github.io/spherex-archive-documentation/spherex-data-access/",
+        "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/SPHEREx_Expsupp_QR.pdf"
+      ],
+      "frames": [
+        {
+          "id": "2025W17_4B_0222_4",
+          "observedAt": "2025-04-26T05:09:43.680Z",
+          "mjd": 60791.215088889,
+          "wavelengthUm": 1.2449031581943137,
+          "bandwidthUm": 0.02966552031732438,
+          "detector": 2,
+          "processingVersion": "6.4+psffix1",
+          "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W17_4B/l2b-v20-2025-240/2/level2_2025W17_4B_0222_4D2_spx_l2b-v20-2025-240.fits",
+          "sha256": "ccc65858c10d7e0cec80682042348f7cf6f0bc2a727d19e078610453e3895026",
+          "spectralCalibration": {
+            "method": "CWAVE/CBAND; bilinear interpolation at zero-based detector coordinates [y,x]",
+            "sourceUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/spectral_wcs/cal-wcs-v4-2025-254/2/spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+            "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+            "orientation": "sky",
+            "association": "Pinned product; X/Y/VALUES lookup table exactly matches exposure"
+          },
+          "extensions": {
+            "IMAGE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "FLAGS": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": ""
+            },
+            "VARIANCE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy2 / sr2"
+            },
+            "ZODI": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "PSF": {
+              "shape": [
+                121,
+                101,
+                101
+              ],
+              "unit": ""
+            },
+            "WCS-WAVE": {
+              "shape": [
+                1
+              ],
+              "unit": null
+            }
+          },
+          "sourceWcsHeader": {
+            "WCSAXES": 2,
+            "CRPIX1": 1020.5,
+            "CRPIX2": 1020.5,
+            "PC1_1": -0.00151189765269,
+            "PC1_2": -0.000794401503141,
+            "PC2_1": -0.000785824290097,
+            "PC2_2": 0.00151279537996,
+            "CDELT1": 1.0,
+            "CDELT2": 1.0,
+            "CUNIT1": "deg",
+            "CUNIT2": "deg",
+            "CTYPE1": "RA---TAN-SIP",
+            "CTYPE2": "DEC--TAN-SIP",
+            "CRVAL1": 332.247308033,
+            "CRVAL2": -57.1597090901,
+            "LONPOLE": 180.0,
+            "LATPOLE": -57.1597090901,
+            "TIMESYS": "UTC",
+            "MJDREF": 0.0,
+            "DATE-OBS": "2025-04-26T05:09:43.680",
+            "MJD-OBS": 60791.215088889,
+            "DATE-BEG": "2025-04-26T05:09:43.680",
+            "MJD-BEG": 60791.215088889,
+            "DATE-AVG": "2025-04-26T05:10:41.239",
+            "MJD-AVG": 60791.215755078,
+            "DATE-END": "2025-04-26T05:11:38.798",
+            "MJD-END": 60791.216421267,
+            "XPOSURE": 113.5826,
+            "TELAPSE": 118.1873,
+            "RADESYS": "ICRS",
+            "A_ORDER": 3,
+            "A_0_0": 0.100646240717,
+            "A_0_1": -0.00318543841216,
+            "A_0_2": -2.05425385923e-08,
+            "A_0_3": 1.58453412112e-11,
+            "A_1_0": -0.000244074150674,
+            "A_1_1": 3.96510461958e-06,
+            "A_1_2": 6.50010754625e-10,
+            "A_2_0": -4.59488569716e-08,
+            "A_2_1": 2.37702529183e-11,
+            "A_3_0": 5.53599580933e-10,
+            "B_ORDER": 3,
+            "B_0_0": -0.847150255873,
+            "B_0_1": -0.000797336065628,
+            "B_0_2": 1.93014860549e-06,
+            "B_0_3": 4.46668574834e-10,
+            "B_1_0": -0.000629938280046,
+            "B_1_1": 3.64095153369e-08,
+            "B_1_2": -5.63184107922e-11,
+            "B_2_0": 6.54744893158e-06,
+            "B_2_1": 6.12225170934e-10,
+            "B_3_0": -1.49262083193e-12,
+            "AP_ORDER": 3,
+            "AP_0_0": -0.0980520462219,
+            "AP_0_1": 0.0031891387096,
+            "AP_0_2": 2.12843285181e-09,
+            "AP_0_3": -1.93632106824e-11,
+            "AP_1_0": 0.000241816140668,
+            "AP_1_1": -3.95256125047e-06,
+            "AP_1_2": -6.25609214735e-10,
+            "AP_2_0": 2.29864886162e-08,
+            "AP_2_1": -3.18334314329e-11,
+            "AP_3_0": -5.26267734744e-10,
+            "BP_ORDER": 3,
+            "BP_0_0": 0.842909511339,
+            "BP_0_1": 0.000795872378746,
+            "BP_0_2": -1.92298985442e-06,
+            "BP_0_3": -4.38925752028e-10,
+            "BP_1_0": 0.000631903919477,
+            "BP_1_1": -8.33585060078e-08,
+            "BP_1_2": 5.17840483948e-11,
+            "BP_2_0": -6.53714178092e-06,
+            "BP_2_1": -5.34120635109e-10,
+            "BP_3_0": 6.69771416014e-13
+          },
+          "zodiacalSubtractionApplied": false,
+          "varianceUsedForMaskOnly": true,
+          "quality": {
+            "sourceMaskedFraction": 0.08907367358708189,
+            "maskedFraction": 0.1396484375,
+            "wavelengthMinUm": 1.2343435866126153,
+            "wavelengthMaxUm": 1.2556181617590048
+          },
+          "dataUrl": "/observations/epsilon-indi-b-d2-2/frame-1.json",
+          "dataSha256": "8c57a6c710e537e105d9fd49a7d1f80e4c520b2dab99cdbb4718f210ffc10ddf"
+        },
+        {
+          "id": "2025W23_2B_0258_3",
+          "observedAt": "2025-06-06T17:22:21.299Z",
+          "mjd": 60832.723857627,
+          "wavelengthUm": 1.244901201895444,
+          "bandwidthUm": 0.029766723220476136,
+          "detector": 2,
+          "processingVersion": "6.4+psffix1",
+          "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W23_2B/l2b-v20-2025-251/2/level2_2025W23_2B_0258_3D2_spx_l2b-v20-2025-251.fits",
+          "sha256": "1a25fbc5be83f42f2eeca335b6bf433e62d8765a5a24cb8b1b56ec6b2de6317d",
+          "spectralCalibration": {
+            "method": "CWAVE/CBAND; bilinear interpolation at zero-based detector coordinates [y,x]",
+            "sourceUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/spectral_wcs/cal-wcs-v4-2025-254/2/spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+            "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+            "orientation": "sky",
+            "association": "Pinned product; X/Y/VALUES lookup table exactly matches exposure"
+          },
+          "extensions": {
+            "IMAGE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "FLAGS": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": ""
+            },
+            "VARIANCE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy2 / sr2"
+            },
+            "ZODI": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "PSF": {
+              "shape": [
+                121,
+                101,
+                101
+              ],
+              "unit": ""
+            },
+            "WCS-WAVE": {
+              "shape": [
+                1
+              ],
+              "unit": null
+            }
+          },
+          "sourceWcsHeader": {
+            "WCSAXES": 2,
+            "CRPIX1": 1020.5,
+            "CRPIX2": 1020.5,
+            "PC1_1": -0.00151113181994,
+            "PC1_2": -0.000788234854263,
+            "PC2_1": -0.000785844774405,
+            "PC2_2": 0.00151469499163,
+            "CDELT1": 1.0,
+            "CDELT2": 1.0,
+            "CUNIT1": "deg",
+            "CUNIT2": "deg",
+            "CTYPE1": "RA---TAN-SIP",
+            "CTYPE2": "DEC--TAN-SIP",
+            "CRVAL1": 332.229613573,
+            "CRVAL2": -57.1627366241,
+            "LONPOLE": 180.0,
+            "LATPOLE": -57.1627366241,
+            "TIMESYS": "UTC",
+            "MJDREF": 0.0,
+            "DATE-OBS": "2025-06-06T17:22:21.299",
+            "MJD-OBS": 60832.723857627,
+            "DATE-BEG": "2025-06-06T17:22:21.299",
+            "MJD-BEG": 60832.723857627,
+            "DATE-AVG": "2025-06-06T17:23:18.858",
+            "MJD-AVG": 60832.724523817,
+            "DATE-END": "2025-06-06T17:24:16.417",
+            "MJD-END": 60832.725190006,
+            "XPOSURE": 113.5826,
+            "TELAPSE": 118.1873,
+            "RADESYS": "ICRS",
+            "A_ORDER": 3,
+            "A_0_0": -0.0635258900374,
+            "A_0_1": 0.000305026594788,
+            "A_0_2": -2.37917161911e-09,
+            "A_0_3": -1.8471913672e-11,
+            "A_1_0": 0.000164243191611,
+            "A_1_1": 3.96732245411e-06,
+            "A_1_2": 5.90685573564e-10,
+            "A_2_0": -2.36177370023e-08,
+            "A_2_1": 3.81903098135e-12,
+            "A_3_0": 5.3995746129e-10,
+            "B_ORDER": 3,
+            "B_0_0": -1.08760697536,
+            "B_0_1": -0.000128662099416,
+            "B_0_2": 1.95709240484e-06,
+            "B_0_3": 4.65319112408e-10,
+            "B_1_0": -0.000136977213945,
+            "B_1_1": 4.95587553369e-08,
+            "B_1_2": -1.95676039692e-11,
+            "B_2_0": 6.54100821973e-06,
+            "B_2_1": 5.87134362162e-10,
+            "B_3_0": -2.29207207065e-11,
+            "AP_ORDER": 3,
+            "AP_0_0": 0.0632674293078,
+            "AP_0_1": -0.000305216725432,
+            "AP_0_2": 3.89091670911e-09,
+            "AP_0_3": 1.86888841153e-11,
+            "AP_1_0": -0.000169432784954,
+            "AP_1_1": -3.95023004239e-06,
+            "AP_1_2": -5.65046411217e-10,
+            "AP_2_0": 2.46935058675e-08,
+            "AP_2_1": -3.55779619646e-12,
+            "AP_3_0": -5.11945859311e-10,
+            "BP_ORDER": 3,
+            "BP_0_0": 1.08301320543,
+            "BP_0_1": 0.000123562227831,
+            "BP_0_2": -1.94629995882e-06,
+            "BP_0_3": -4.56350773176e-10,
+            "BP_1_0": 0.000136162276773,
+            "BP_1_1": -4.7252778005e-08,
+            "BP_1_2": 1.98973700672e-11,
+            "BP_2_0": -6.5216631313e-06,
+            "BP_2_1": -5.07816755618e-10,
+            "BP_3_0": 2.26410064087e-11
+          },
+          "zodiacalSubtractionApplied": false,
+          "varianceUsedForMaskOnly": true,
+          "quality": {
+            "sourceMaskedFraction": 0.027698241061130335,
+            "maskedFraction": 0.1396484375,
+            "wavelengthMinUm": 1.2345298823848825,
+            "wavelengthMaxUm": 1.2556400500923006
+          },
+          "dataUrl": "/observations/epsilon-indi-b-d2-2/frame-2.json",
+          "dataSha256": "571a04862ee946e01c391bd2366c0e3afcaa0b242d956ee481e7fa4430974c88"
+        }
+      ],
+      "validation": {
+        "reportUrl": "/observations/epsilon-indi-b-d2-2/validation.json",
+        "matchedSources": 13,
+        "residualRmsArcsec": 1.2251426362699196,
+        "medianOffsetArcsec": 0.5618834264355552,
+        "differenceBlockers": [
+          "Background/photometric fit is exploratory and has not been validated as a correction",
+          "Native-pixel and calibration covariance are not supplied in the diagonal VARIANCE extension",
+          "Spatially varying recommended ePSF has not been matched"
+        ]
+      },
+      "targetId": "epsilon-indi-b",
+      "targetGuide": {
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A+eps+Ind+B",
+        "note": "The fixed field follows a SIMBAD J2000 proper-motion guide. Predicted shift across these dates: 0.532\u2033; this is a catalog prediction, not measured image motion. Annual parallax, perspective acceleration and binary orbit are not fitted; the guide is approximate.",
+        "positions": [
+          {
+            "observedAt": "2025-04-26T05:09:43.680Z",
+            "ra": 331.09528666206785,
+            "dec": -56.80018113638188
+          },
+          {
+            "observedAt": "2025-06-06T17:22:21.299Z",
+            "ra": 331.09551633785304,
+            "dec": -56.80025891521231
+          }
+        ]
+      },
+      "overlayUrl": "/observations/epsilon-indi-b-d2-2/allwise.json"
+    },
+    {
+      "id": "epsilon-indi-b-d2-3",
+      "name": "Epsilon Indi B field \u00b7 real SPHEREx",
+      "ra": 331.09540149170357,
+      "dec": -56.800220023000946,
+      "frame": "ICRS",
+      "coordinateEpoch": "ICRS fixed field at midpoint proper-motion guide position; no observer parallax correction",
+      "sourceKind": "observation",
+      "status": "ready",
+      "sourceRelease": "SPHEREx Quick Release 2 (IRSA)",
+      "sourceDoi": "https://doi.org/10.26131/IRSA652",
+      "credit": "SPHEREx / NASA / JPL-Caltech; served by Caltech/IPAC IRSA",
+      "acknowledgementUrl": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_qr.html",
+      "width": 64,
+      "height": 64,
+      "pixelScaleArcsec": 6.15,
+      "commonDisplay": {
+        "min": 0.18809367418914322,
+        "max": 1.3496137292350148,
+        "unit": "MJy/sr"
+      },
+      "alignment": {
+        "method": "Astropy celestial WCS with SIP distortion; bilinear reprojection onto one ICRS TAN grid",
+        "orientation": "north-up, east-left",
+        "rowOrder": "north-to-south",
+        "residualAstrometryArcsec": 0.8473011098614621,
+        "wcsHeader": {
+          "WCSAXES": 2,
+          "CRPIX1": 32.5,
+          "CRPIX2": 32.5,
+          "CDELT1": -0.0017083333333333,
+          "CDELT2": 0.0017083333333333,
+          "CUNIT1": "deg",
+          "CUNIT2": "deg",
+          "CTYPE1": "RA---TAN",
+          "CTYPE2": "DEC--TAN",
+          "CRVAL1": 331.0954014917,
+          "CRVAL2": -56.800220023001,
+          "LONPOLE": 180.0,
+          "LATPOLE": -56.800220023001,
+          "MJDREF": 0.0,
+          "RADESYS": "ICRS"
+        }
+      },
+      "quality": {
+        "commonValidFraction": 0.924072265625,
+        "wavelengthDifferenceAtTargetUm": 5.8494051918600576e-05,
+        "maxWavelengthDifferenceBandwidthFraction": 0.25,
+        "maxKeptWavelengthDifferenceUm": 0.0004798991448742296,
+        "motionMeasured": false,
+        "significanceVerified": false,
+        "scientificDifferencingReady": false,
+        "differenceBlockers": [
+          "Background/photometric fit is exploratory and has not been validated as a correction",
+          "Native-pixel and calibration covariance are not supplied in the diagonal VARIANCE extension",
+          "Spatially varying recommended ePSF has not been matched"
+        ]
+      },
+      "warnings": [
+        "Real SPHEREx quick-release observations. Calibration and image-quality artifacts may remain.",
+        "Each detector pixel has its own wavelength. The pair uses nearby, not identical, effective wavelengths; incompatible pixels are masked.",
+        "Wavelengths use the pinned CWAVE/CBAND spectral calibration product, matched to every exposure. No 102-channel spectrum is inferred from a single frame.",
+        "Both frames use the same MJy/sr display range. No independent per-frame brightness normalization is applied. Zodiacal background has not been subtracted.",
+        "Independent compact-source centroid fits and PSF/noise diagnostics are documented in the linked numerical report. These are visual-comparison checks, not a significant-change measurement.",
+        "Reprojection interpolates pixels and correlates noise. This viewer does not establish statistically significant motion or variability."
+      ],
+      "interpretation": "Inspect actual SPHEREx pixels around Epsilon Indi B. The target itself has not been independently identified or measured in these frames. No significant motion or brightness change is claimed.",
+      "documentationUrls": [
+        "https://caltech-ipac.github.io/irsa-tutorials/spherex-intro/",
+        "https://caltech-ipac.github.io/spherex-archive-documentation/spherex-data-access/",
+        "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/SPHEREx_Expsupp_QR.pdf"
+      ],
+      "frames": [
+        {
+          "id": "2025W17_4B_0222_3",
+          "observedAt": "2025-04-26T05:07:34.751Z",
+          "mjd": 60791.213596655,
+          "wavelengthUm": 1.2158266380466387,
+          "bandwidthUm": 0.029103893220859184,
+          "detector": 2,
+          "processingVersion": "6.4+psffix1",
+          "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W17_4B/l2b-v20-2025-240/2/level2_2025W17_4B_0222_3D2_spx_l2b-v20-2025-240.fits",
+          "sha256": "60784bc8b4e78fa4b0b269c6fa6e92d21c156d3dabfcc107a08a8e3ab9db8d5f",
+          "spectralCalibration": {
+            "method": "CWAVE/CBAND; bilinear interpolation at zero-based detector coordinates [y,x]",
+            "sourceUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/spectral_wcs/cal-wcs-v4-2025-254/2/spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+            "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+            "orientation": "sky",
+            "association": "Pinned product; X/Y/VALUES lookup table exactly matches exposure"
+          },
+          "extensions": {
+            "IMAGE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "FLAGS": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": ""
+            },
+            "VARIANCE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy2 / sr2"
+            },
+            "ZODI": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "PSF": {
+              "shape": [
+                121,
+                101,
+                101
+              ],
+              "unit": ""
+            },
+            "WCS-WAVE": {
+              "shape": [
+                1
+              ],
+              "unit": null
+            }
+          },
+          "sourceWcsHeader": {
+            "WCSAXES": 2,
+            "CRPIX1": 1020.5,
+            "CRPIX2": 1020.5,
+            "PC1_1": -0.00150840044834,
+            "PC1_2": -0.000797779851537,
+            "PC2_1": -0.000788135764786,
+            "PC2_2": 0.00151371972782,
+            "CDELT1": 1.0,
+            "CDELT2": 1.0,
+            "CUNIT1": "deg",
+            "CUNIT2": "deg",
+            "CTYPE1": "RA---TAN-SIP",
+            "CTYPE2": "DEC--TAN-SIP",
+            "CRVAL1": 332.413592751,
+            "CRVAL2": -57.3331375173,
+            "LONPOLE": 180.0,
+            "LATPOLE": -57.3331375173,
+            "TIMESYS": "UTC",
+            "MJDREF": 0.0,
+            "DATE-OBS": "2025-04-26T05:07:34.751",
+            "MJD-OBS": 60791.213596655,
+            "DATE-BEG": "2025-04-26T05:07:34.751",
+            "MJD-BEG": 60791.213596655,
+            "DATE-AVG": "2025-04-26T05:08:32.310",
+            "MJD-AVG": 60791.214262844,
+            "DATE-END": "2025-04-26T05:09:29.869",
+            "MJD-END": 60791.214929034,
+            "XPOSURE": 113.5826,
+            "TELAPSE": 118.1873,
+            "RADESYS": "ICRS",
+            "A_ORDER": 3,
+            "A_0_0": -1.24653240579,
+            "A_0_1": -0.0022423125631,
+            "A_0_2": -2.13633375802e-08,
+            "A_0_3": 2.46705553261e-11,
+            "A_1_0": 0.0009847826854,
+            "A_1_1": 3.97538837661e-06,
+            "A_1_2": 5.78969004088e-10,
+            "A_2_0": -4.42626434003e-08,
+            "A_2_1": 1.64614847689e-11,
+            "A_3_0": 5.46443846278e-10,
+            "B_ORDER": 3,
+            "B_0_0": -1.77609000342,
+            "B_0_1": -0.0022319048443,
+            "B_0_2": 1.95491096804e-06,
+            "B_0_3": 4.85888437778e-10,
+            "B_1_0": -0.000917190044496,
+            "B_1_1": 2.78569226421e-08,
+            "B_1_2": -4.58800580455e-12,
+            "B_2_0": 6.52144760062e-06,
+            "B_2_1": 6.41433109611e-10,
+            "B_3_0": 7.3791219327e-12,
+            "AP_ORDER": 3,
+            "AP_0_0": 1.24916606211,
+            "AP_0_1": 0.00224016507735,
+            "AP_0_2": 7.75684509603e-09,
+            "AP_0_3": -2.71815100281e-11,
+            "AP_1_0": -0.000989622087317,
+            "AP_1_1": -3.96077650259e-06,
+            "AP_1_2": -5.54818831842e-10,
+            "AP_2_0": 2.42315366342e-08,
+            "AP_2_1": -2.27219954122e-11,
+            "AP_3_0": -5.16693108729e-10,
+            "BP_ORDER": 3,
+            "BP_0_0": 1.77625175325,
+            "BP_0_1": 0.00223100477838,
+            "BP_0_2": -1.95706187064e-06,
+            "BP_0_3": -4.8083000599e-10,
+            "BP_1_0": 0.000902010406426,
+            "BP_1_1": -6.53855329526e-08,
+            "BP_1_2": 3.30821638174e-13,
+            "BP_2_0": -6.5049100853e-06,
+            "BP_2_1": -5.6350727868e-10,
+            "BP_3_0": -8.55883013653e-12
+          },
+          "zodiacalSubtractionApplied": false,
+          "varianceUsedForMaskOnly": true,
+          "quality": {
+            "sourceMaskedFraction": 0.050402729719338714,
+            "maskedFraction": 0.075927734375,
+            "wavelengthMinUm": 1.2054126064713504,
+            "wavelengthMaxUm": 1.2263831416483957
+          },
+          "dataUrl": "/observations/epsilon-indi-b-d2-3/frame-1.json",
+          "dataSha256": "a87183e559b335e7c9982ee83a574d5015fef62e863806884d3d654d892a763b"
+        },
+        {
+          "id": "2025W23_2B_0258_2",
+          "observedAt": "2025-06-06T17:20:12.369Z",
+          "mjd": 60832.722365382,
+          "wavelengthUm": 1.2158851320985573,
+          "bandwidthUm": 0.028677025458264914,
+          "detector": 2,
+          "processingVersion": "6.4+psffix1",
+          "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W23_2B/l2b-v20-2025-251/2/level2_2025W23_2B_0258_2D2_spx_l2b-v20-2025-251.fits",
+          "sha256": "c0ca82717405c9eebc8610e9e3db39930d3a16ff56d33bfaba6d2a98ba4e11cc",
+          "spectralCalibration": {
+            "method": "CWAVE/CBAND; bilinear interpolation at zero-based detector coordinates [y,x]",
+            "sourceUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/spectral_wcs/cal-wcs-v4-2025-254/2/spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+            "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+            "orientation": "sky",
+            "association": "Pinned product; X/Y/VALUES lookup table exactly matches exposure"
+          },
+          "extensions": {
+            "IMAGE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "FLAGS": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": ""
+            },
+            "VARIANCE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy2 / sr2"
+            },
+            "ZODI": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "PSF": {
+              "shape": [
+                121,
+                101,
+                101
+              ],
+              "unit": ""
+            },
+            "WCS-WAVE": {
+              "shape": [
+                1
+              ],
+              "unit": null
+            }
+          },
+          "sourceWcsHeader": {
+            "WCSAXES": 2,
+            "CRPIX1": 1020.5,
+            "CRPIX2": 1020.5,
+            "PC1_1": -0.00150815886071,
+            "PC1_2": -0.000791412642245,
+            "PC2_1": -0.000789272569869,
+            "PC2_2": 0.0015126551619,
+            "CDELT1": 1.0,
+            "CDELT2": 1.0,
+            "CUNIT1": "deg",
+            "CUNIT2": "deg",
+            "CTYPE1": "RA---TAN-SIP",
+            "CTYPE2": "DEC--TAN-SIP",
+            "CRVAL1": 332.402092892,
+            "CRVAL2": -57.3361243401,
+            "LONPOLE": 180.0,
+            "LATPOLE": -57.3361243401,
+            "TIMESYS": "UTC",
+            "MJDREF": 0.0,
+            "DATE-OBS": "2025-06-06T17:20:12.369",
+            "MJD-OBS": 60832.722365382,
+            "DATE-BEG": "2025-06-06T17:20:12.369",
+            "MJD-BEG": 60832.722365382,
+            "DATE-AVG": "2025-06-06T17:21:09.928",
+            "MJD-AVG": 60832.723031571,
+            "DATE-END": "2025-06-06T17:22:07.487",
+            "MJD-END": 60832.72369776,
+            "XPOSURE": 113.5826,
+            "TELAPSE": 118.1873,
+            "RADESYS": "ICRS",
+            "A_ORDER": 3,
+            "A_0_0": 0.686580141736,
+            "A_0_1": 0.000631816224198,
+            "A_0_2": -1.69318343837e-08,
+            "A_0_3": -3.94467782409e-12,
+            "A_1_0": 0.00079400017029,
+            "A_1_1": 3.97447304184e-06,
+            "A_1_2": 5.86602005925e-10,
+            "A_2_0": -2.58791000556e-08,
+            "A_2_1": 9.94333886092e-12,
+            "A_3_0": 5.24993759468e-10,
+            "B_ORDER": 3,
+            "B_0_0": -1.14013130593,
+            "B_0_1": 7.13796157105e-05,
+            "B_0_2": 1.95803477998e-06,
+            "B_0_3": 4.4260190654e-10,
+            "B_1_0": -0.000111602939172,
+            "B_1_1": 3.17813768208e-08,
+            "B_1_2": -2.59991680582e-11,
+            "B_2_0": 6.52949209356e-06,
+            "B_2_1": 6.12464643606e-10,
+            "B_3_0": 2.76284118476e-11,
+            "AP_ORDER": 3,
+            "AP_0_0": -0.686739463952,
+            "AP_0_1": -0.000628498783096,
+            "AP_0_2": 2.09436400641e-08,
+            "AP_0_3": 4.40888440969e-12,
+            "AP_1_0": -0.000798844469563,
+            "AP_1_1": -3.95186994957e-06,
+            "AP_1_2": -5.60025263581e-10,
+            "AP_2_0": 3.05529532615e-08,
+            "AP_2_1": -9.16656113137e-12,
+            "AP_3_0": -4.95787130582e-10,
+            "BP_ORDER": 3,
+            "BP_0_0": 1.13528028229,
+            "BP_0_1": -7.66924206909e-05,
+            "BP_0_2": -1.94635306369e-06,
+            "BP_0_3": -4.3335240616e-10,
+            "BP_1_0": 0.000120406275343,
+            "BP_1_1": -2.3662504136e-08,
+            "BP_1_2": 2.64432928128e-11,
+            "BP_2_0": -6.50077364457e-06,
+            "BP_2_1": -5.32211405276e-10,
+            "BP_3_0": -2.77955424018e-11
+          },
+          "zodiacalSubtractionApplied": false,
+          "varianceUsedForMaskOnly": true,
+          "quality": {
+            "sourceMaskedFraction": 0.03171905036524414,
+            "maskedFraction": 0.075927734375,
+            "wavelengthMinUm": 1.2055474545596865,
+            "wavelengthMaxUm": 1.2265501121538005
+          },
+          "dataUrl": "/observations/epsilon-indi-b-d2-3/frame-2.json",
+          "dataSha256": "ee7a310b20e678603d317f01624cc160635a8a49e1725f3613229dcf104c5632"
+        }
+      ],
+      "validation": {
+        "reportUrl": "/observations/epsilon-indi-b-d2-3/validation.json",
+        "matchedSources": 12,
+        "residualRmsArcsec": 0.8473011098614621,
+        "medianOffsetArcsec": 0.3872141583304504,
+        "differenceBlockers": [
+          "Background/photometric fit is exploratory and has not been validated as a correction",
+          "Native-pixel and calibration covariance are not supplied in the diagonal VARIANCE extension",
+          "Spatially varying recommended ePSF has not been matched"
+        ]
+      },
+      "targetId": "epsilon-indi-b",
+      "targetGuide": {
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A+eps+Ind+B",
+        "note": "The fixed field follows a SIMBAD J2000 proper-motion guide. Predicted shift across these dates: 0.532\u2033; this is a catalog prediction, not measured image motion. Annual parallax, perspective acceleration and binary orbit are not fitted; the guide is approximate.",
+        "positions": [
+          {
+            "observedAt": "2025-04-26T05:07:34.751Z",
+            "ra": 331.0952866538111,
+            "dec": -56.800181133585724
+          },
+          {
+            "observedAt": "2025-06-06T17:20:12.369Z",
+            "ra": 331.0955163295961,
+            "dec": -56.80025891241617
+          }
+        ]
+      },
+      "overlayUrl": "/observations/epsilon-indi-b-d2-3/allwise.json"
+    },
+    {
+      "id": "epsilon-indi-b-three-dates",
+      "name": "Epsilon Indi B field \u00b7 real SPHEREx",
+      "ra": 331.0954014999604,
+      "dec": -56.800220025797096,
+      "frame": "ICRS",
+      "coordinateEpoch": "ICRS fixed field at midpoint proper-motion guide position; no observer parallax correction",
+      "sourceKind": "observation",
+      "status": "ready",
+      "sourceRelease": "SPHEREx Quick Release 2 (IRSA)",
+      "sourceDoi": "https://doi.org/10.26131/IRSA652",
+      "credit": "SPHEREx / NASA / JPL-Caltech; served by Caltech/IPAC IRSA",
+      "acknowledgementUrl": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_qr.html",
+      "width": 32,
+      "height": 32,
+      "pixelScaleArcsec": 6.15,
+      "commonDisplay": {
+        "min": 0.2349532737486175,
+        "max": 2.8223912860306988,
+        "unit": "MJy/sr"
+      },
+      "alignment": {
+        "method": "Astropy celestial WCS with SIP distortion; bilinear reprojection onto one ICRS TAN grid",
+        "orientation": "north-up, east-left",
+        "rowOrder": "north-to-south",
+        "residualAstrometryArcsec": 1.1242819420241892,
+        "wcsHeader": {
+          "WCSAXES": 2,
+          "CRPIX1": 16.5,
+          "CRPIX2": 16.5,
+          "CDELT1": -0.0017083333333333,
+          "CDELT2": 0.0017083333333333,
+          "CUNIT1": "deg",
+          "CUNIT2": "deg",
+          "CTYPE1": "RA---TAN",
+          "CTYPE2": "DEC--TAN",
+          "CRVAL1": 331.09540149996,
+          "CRVAL2": -56.800220025797,
+          "LONPOLE": 180.0,
+          "LATPOLE": -56.800220025797,
+          "MJDREF": 0.0,
+          "RADESYS": "ICRS"
+        }
+      },
+      "quality": {
+        "commonValidFraction": 0.72265625,
+        "wavelengthDifferenceAtTargetUm": 0.0012866145854728561,
+        "maxWavelengthDifferenceBandwidthFraction": 0.25,
+        "maxKeptWavelengthDifferenceUm": 0.0073513747852409494,
+        "motionMeasured": false,
+        "significanceVerified": false,
+        "scientificDifferencingReady": false,
+        "differenceBlockers": [
+          "Background/photometric fit is exploratory and has not been validated as a correction",
+          "Native-pixel and calibration covariance are not supplied in the diagonal VARIANCE extension",
+          "Spatially varying recommended ePSF has not been matched"
+        ]
+      },
+      "warnings": [
+        "Real SPHEREx quick-release observations. Calibration and image-quality artifacts may remain.",
+        "Each detector pixel has its own wavelength. The pair uses nearby, not identical, effective wavelengths; incompatible pixels are masked.",
+        "Wavelengths use the pinned CWAVE/CBAND spectral calibration product, matched to every exposure. No 102-channel spectrum is inferred from a single frame.",
+        "Both frames use the same MJy/sr display range. No independent per-frame brightness normalization is applied. Zodiacal background has not been subtracted.",
+        "Independent compact-source centroid fits and PSF/noise diagnostics are documented in the linked numerical report. These are visual-comparison checks, not a significant-change measurement.",
+        "Reprojection interpolates pixels and correlates noise. This viewer does not establish statistically significant motion or variability."
+      ],
+      "interpretation": "Inspect actual SPHEREx pixels around Epsilon Indi B. The target itself has not been independently identified or measured in these frames. No significant motion or brightness change is claimed.",
+      "documentationUrls": [
+        "https://caltech-ipac.github.io/irsa-tutorials/spherex-intro/",
+        "https://caltech-ipac.github.io/spherex-archive-documentation/spherex-data-access/",
+        "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/SPHEREx_Expsupp_QR.pdf"
+      ],
+      "frames": [
+        {
+          "id": "2025W17_4B_0222_4",
+          "observedAt": "2025-04-26T05:09:43.680Z",
+          "mjd": 60791.215088889,
+          "wavelengthUm": 1.2449031581943137,
+          "bandwidthUm": 0.02966552031732438,
+          "detector": 2,
+          "processingVersion": "6.4+psffix1",
+          "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W17_4B/l2b-v20-2025-240/2/level2_2025W17_4B_0222_4D2_spx_l2b-v20-2025-240.fits",
+          "sha256": "ccc65858c10d7e0cec80682042348f7cf6f0bc2a727d19e078610453e3895026",
+          "spectralCalibration": {
+            "method": "CWAVE/CBAND; bilinear interpolation at zero-based detector coordinates [y,x]",
+            "sourceUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/spectral_wcs/cal-wcs-v4-2025-254/2/spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+            "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+            "orientation": "sky",
+            "association": "Pinned product; X/Y/VALUES lookup table exactly matches exposure"
+          },
+          "extensions": {
+            "IMAGE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "FLAGS": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": ""
+            },
+            "VARIANCE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy2 / sr2"
+            },
+            "ZODI": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "PSF": {
+              "shape": [
+                121,
+                101,
+                101
+              ],
+              "unit": ""
+            },
+            "WCS-WAVE": {
+              "shape": [
+                1
+              ],
+              "unit": null
+            }
+          },
+          "sourceWcsHeader": {
+            "WCSAXES": 2,
+            "CRPIX1": 1020.5,
+            "CRPIX2": 1020.5,
+            "PC1_1": -0.00151189765269,
+            "PC1_2": -0.000794401503141,
+            "PC2_1": -0.000785824290097,
+            "PC2_2": 0.00151279537996,
+            "CDELT1": 1.0,
+            "CDELT2": 1.0,
+            "CUNIT1": "deg",
+            "CUNIT2": "deg",
+            "CTYPE1": "RA---TAN-SIP",
+            "CTYPE2": "DEC--TAN-SIP",
+            "CRVAL1": 332.247308033,
+            "CRVAL2": -57.1597090901,
+            "LONPOLE": 180.0,
+            "LATPOLE": -57.1597090901,
+            "TIMESYS": "UTC",
+            "MJDREF": 0.0,
+            "DATE-OBS": "2025-04-26T05:09:43.680",
+            "MJD-OBS": 60791.215088889,
+            "DATE-BEG": "2025-04-26T05:09:43.680",
+            "MJD-BEG": 60791.215088889,
+            "DATE-AVG": "2025-04-26T05:10:41.239",
+            "MJD-AVG": 60791.215755078,
+            "DATE-END": "2025-04-26T05:11:38.798",
+            "MJD-END": 60791.216421267,
+            "XPOSURE": 113.5826,
+            "TELAPSE": 118.1873,
+            "RADESYS": "ICRS",
+            "A_ORDER": 3,
+            "A_0_0": 0.100646240717,
+            "A_0_1": -0.00318543841216,
+            "A_0_2": -2.05425385923e-08,
+            "A_0_3": 1.58453412112e-11,
+            "A_1_0": -0.000244074150674,
+            "A_1_1": 3.96510461958e-06,
+            "A_1_2": 6.50010754625e-10,
+            "A_2_0": -4.59488569716e-08,
+            "A_2_1": 2.37702529183e-11,
+            "A_3_0": 5.53599580933e-10,
+            "B_ORDER": 3,
+            "B_0_0": -0.847150255873,
+            "B_0_1": -0.000797336065628,
+            "B_0_2": 1.93014860549e-06,
+            "B_0_3": 4.46668574834e-10,
+            "B_1_0": -0.000629938280046,
+            "B_1_1": 3.64095153369e-08,
+            "B_1_2": -5.63184107922e-11,
+            "B_2_0": 6.54744893158e-06,
+            "B_2_1": 6.12225170934e-10,
+            "B_3_0": -1.49262083193e-12,
+            "AP_ORDER": 3,
+            "AP_0_0": -0.0980520462219,
+            "AP_0_1": 0.0031891387096,
+            "AP_0_2": 2.12843285181e-09,
+            "AP_0_3": -1.93632106824e-11,
+            "AP_1_0": 0.000241816140668,
+            "AP_1_1": -3.95256125047e-06,
+            "AP_1_2": -6.25609214735e-10,
+            "AP_2_0": 2.29864886162e-08,
+            "AP_2_1": -3.18334314329e-11,
+            "AP_3_0": -5.26267734744e-10,
+            "BP_ORDER": 3,
+            "BP_0_0": 0.842909511339,
+            "BP_0_1": 0.000795872378746,
+            "BP_0_2": -1.92298985442e-06,
+            "BP_0_3": -4.38925752028e-10,
+            "BP_1_0": 0.000631903919477,
+            "BP_1_1": -8.33585060078e-08,
+            "BP_1_2": 5.17840483948e-11,
+            "BP_2_0": -6.53714178092e-06,
+            "BP_2_1": -5.34120635109e-10,
+            "BP_3_0": 6.69771416014e-13
+          },
+          "zodiacalSubtractionApplied": false,
+          "varianceUsedForMaskOnly": true,
+          "quality": {
+            "sourceMaskedFraction": 0.08907367358708189,
+            "maskedFraction": 0.27734375,
+            "wavelengthMinUm": 1.241777312773768,
+            "wavelengthMaxUm": 1.2491559863997768
+          },
+          "dataUrl": "/observations/epsilon-indi-b-three-dates/frame-1.json",
+          "dataSha256": "bab03654a0eed52c860604b5dc4489029228173583e05d0000628afe83e660cf"
+        },
+        {
+          "id": "2025W23_2B_0258_3",
+          "observedAt": "2025-06-06T17:22:21.299Z",
+          "mjd": 60832.723857627,
+          "wavelengthUm": 1.244901201895444,
+          "bandwidthUm": 0.029766723220476136,
+          "detector": 2,
+          "processingVersion": "6.4+psffix1",
+          "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W23_2B/l2b-v20-2025-251/2/level2_2025W23_2B_0258_3D2_spx_l2b-v20-2025-251.fits",
+          "sha256": "1a25fbc5be83f42f2eeca335b6bf433e62d8765a5a24cb8b1b56ec6b2de6317d",
+          "spectralCalibration": {
+            "method": "CWAVE/CBAND; bilinear interpolation at zero-based detector coordinates [y,x]",
+            "sourceUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/spectral_wcs/cal-wcs-v4-2025-254/2/spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+            "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+            "orientation": "sky",
+            "association": "Pinned product; X/Y/VALUES lookup table exactly matches exposure"
+          },
+          "extensions": {
+            "IMAGE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "FLAGS": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": ""
+            },
+            "VARIANCE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy2 / sr2"
+            },
+            "ZODI": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "PSF": {
+              "shape": [
+                121,
+                101,
+                101
+              ],
+              "unit": ""
+            },
+            "WCS-WAVE": {
+              "shape": [
+                1
+              ],
+              "unit": null
+            }
+          },
+          "sourceWcsHeader": {
+            "WCSAXES": 2,
+            "CRPIX1": 1020.5,
+            "CRPIX2": 1020.5,
+            "PC1_1": -0.00151113181994,
+            "PC1_2": -0.000788234854263,
+            "PC2_1": -0.000785844774405,
+            "PC2_2": 0.00151469499163,
+            "CDELT1": 1.0,
+            "CDELT2": 1.0,
+            "CUNIT1": "deg",
+            "CUNIT2": "deg",
+            "CTYPE1": "RA---TAN-SIP",
+            "CTYPE2": "DEC--TAN-SIP",
+            "CRVAL1": 332.229613573,
+            "CRVAL2": -57.1627366241,
+            "LONPOLE": 180.0,
+            "LATPOLE": -57.1627366241,
+            "TIMESYS": "UTC",
+            "MJDREF": 0.0,
+            "DATE-OBS": "2025-06-06T17:22:21.299",
+            "MJD-OBS": 60832.723857627,
+            "DATE-BEG": "2025-06-06T17:22:21.299",
+            "MJD-BEG": 60832.723857627,
+            "DATE-AVG": "2025-06-06T17:23:18.858",
+            "MJD-AVG": 60832.724523817,
+            "DATE-END": "2025-06-06T17:24:16.417",
+            "MJD-END": 60832.725190006,
+            "XPOSURE": 113.5826,
+            "TELAPSE": 118.1873,
+            "RADESYS": "ICRS",
+            "A_ORDER": 3,
+            "A_0_0": -0.0635258900374,
+            "A_0_1": 0.000305026594788,
+            "A_0_2": -2.37917161911e-09,
+            "A_0_3": -1.8471913672e-11,
+            "A_1_0": 0.000164243191611,
+            "A_1_1": 3.96732245411e-06,
+            "A_1_2": 5.90685573564e-10,
+            "A_2_0": -2.36177370023e-08,
+            "A_2_1": 3.81903098135e-12,
+            "A_3_0": 5.3995746129e-10,
+            "B_ORDER": 3,
+            "B_0_0": -1.08760697536,
+            "B_0_1": -0.000128662099416,
+            "B_0_2": 1.95709240484e-06,
+            "B_0_3": 4.65319112408e-10,
+            "B_1_0": -0.000136977213945,
+            "B_1_1": 4.95587553369e-08,
+            "B_1_2": -1.95676039692e-11,
+            "B_2_0": 6.54100821973e-06,
+            "B_2_1": 5.87134362162e-10,
+            "B_3_0": -2.29207207065e-11,
+            "AP_ORDER": 3,
+            "AP_0_0": 0.0632674293078,
+            "AP_0_1": -0.000305216725432,
+            "AP_0_2": 3.89091670911e-09,
+            "AP_0_3": 1.86888841153e-11,
+            "AP_1_0": -0.000169432784954,
+            "AP_1_1": -3.95023004239e-06,
+            "AP_1_2": -5.65046411217e-10,
+            "AP_2_0": 2.46935058675e-08,
+            "AP_2_1": -3.55779619646e-12,
+            "AP_3_0": -5.11945859311e-10,
+            "BP_ORDER": 3,
+            "BP_0_0": 1.08301320543,
+            "BP_0_1": 0.000123562227831,
+            "BP_0_2": -1.94629995882e-06,
+            "BP_0_3": -4.56350773176e-10,
+            "BP_1_0": 0.000136162276773,
+            "BP_1_1": -4.7252778005e-08,
+            "BP_1_2": 1.98973700672e-11,
+            "BP_2_0": -6.5216631313e-06,
+            "BP_2_1": -5.07816755618e-10,
+            "BP_3_0": 2.26410064087e-11
+          },
+          "zodiacalSubtractionApplied": false,
+          "varianceUsedForMaskOnly": true,
+          "quality": {
+            "sourceMaskedFraction": 0.027698241061130335,
+            "maskedFraction": 0.27734375,
+            "wavelengthMinUm": 1.2419348823233363,
+            "wavelengthMaxUm": 1.2492931410802313
+          },
+          "dataUrl": "/observations/epsilon-indi-b-three-dates/frame-2.json",
+          "dataSha256": "a0f29f44355b803fc241f3d710cd490e35bee7b45e5b9f1b46ba02458da31dbf"
+        },
+        {
+          "id": "2025W40_1A_0661_3",
+          "observedAt": "2025-10-02T00:30:30.869Z",
+          "mjd": 60950.021190613,
+          "wavelengthUm": 1.2461878164809168,
+          "bandwidthUm": 0.029586896736594745,
+          "detector": 2,
+          "processingVersion": "6.4+psffix1",
+          "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W40_1A/l2b-v20-2025-277/2/level2_2025W40_1A_0661_3D2_spx_l2b-v20-2025-277.fits",
+          "sha256": "b0afd6f533fc200673d1efaa2a1d770e19a634c008a006b2af0165a8172d5b0e",
+          "spectralCalibration": {
+            "method": "CWAVE/CBAND; bilinear interpolation at zero-based detector coordinates [y,x]",
+            "sourceUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/spectral_wcs/cal-wcs-v4-2025-254/2/spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+            "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+            "orientation": "sky",
+            "association": "Pinned product; X/Y/VALUES lookup table exactly matches exposure"
+          },
+          "extensions": {
+            "IMAGE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "FLAGS": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": ""
+            },
+            "VARIANCE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy2 / sr2"
+            },
+            "ZODI": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "PSF": {
+              "shape": [
+                121,
+                101,
+                101
+              ],
+              "unit": ""
+            },
+            "WCS-WAVE": {
+              "shape": [
+                1
+              ],
+              "unit": null
+            }
+          },
+          "sourceWcsHeader": {
+            "WCSAXES": 2,
+            "CRPIX1": 1020.5,
+            "CRPIX2": 1020.5,
+            "PC1_1": 0.00151983803962,
+            "PC1_2": 0.000768343530489,
+            "PC2_1": 0.000766336362325,
+            "PC2_2": -0.00152389457709,
+            "CDELT1": 1.0,
+            "CDELT2": 1.0,
+            "CUNIT1": "deg",
+            "CUNIT2": "deg",
+            "CTYPE1": "RA---TAN-SIP",
+            "CTYPE2": "DEC--TAN-SIP",
+            "CRVAL1": 331.324947089,
+            "CRVAL2": -56.0683447621,
+            "LONPOLE": 180.0,
+            "LATPOLE": -56.0683447621,
+            "TIMESYS": "UTC",
+            "MJDREF": 0.0,
+            "DATE-OBS": "2025-10-02T00:30:30.869",
+            "MJD-OBS": 60950.021190613,
+            "DATE-BEG": "2025-10-02T00:30:30.869",
+            "MJD-BEG": 60950.021190613,
+            "DATE-AVG": "2025-10-02T00:31:28.428",
+            "MJD-AVG": 60950.021856803,
+            "DATE-END": "2025-10-02T00:32:25.987",
+            "MJD-END": 60950.022522992,
+            "XPOSURE": 113.5826,
+            "TELAPSE": 118.1873,
+            "RADESYS": "ICRS",
+            "A_ORDER": 3,
+            "A_0_0": -0.104178712821,
+            "A_0_1": -5.78847641574e-05,
+            "A_0_2": -3.02258017483e-09,
+            "A_0_3": 8.75499396355e-12,
+            "A_1_0": 0.000700992004601,
+            "A_1_1": 3.97673441061e-06,
+            "A_1_2": 6.1557669459e-10,
+            "A_2_0": -1.95949646796e-08,
+            "A_2_1": 1.750793694e-11,
+            "A_3_0": 5.69434470053e-10,
+            "B_ORDER": 3,
+            "B_0_0": -1.1271650064,
+            "B_0_1": 0.000271777018395,
+            "B_0_2": 1.97214105277e-06,
+            "B_0_3": 4.57581148461e-10,
+            "B_1_0": 0.000500563568255,
+            "B_1_1": 2.85536147154e-08,
+            "B_1_2": -4.20477419024e-11,
+            "B_2_0": 6.54746698747e-06,
+            "B_2_1": 5.95019660083e-10,
+            "B_3_0": -4.09634478912e-12,
+            "AP_ORDER": 3,
+            "AP_0_0": 0.104126067489,
+            "AP_0_1": 5.7414975683e-05,
+            "AP_0_2": 2.7479090544e-09,
+            "AP_0_3": -8.79962236536e-12,
+            "AP_1_0": -0.000705935726372,
+            "AP_1_1": -3.95317166112e-06,
+            "AP_1_2": -5.88536345151e-10,
+            "AP_2_0": 2.10921944659e-08,
+            "AP_2_1": -1.71318795468e-11,
+            "AP_3_0": -5.39975849742e-10,
+            "BP_ORDER": 3,
+            "BP_0_0": 1.12198320906,
+            "BP_0_1": -0.000276996523111,
+            "BP_0_2": -1.95896615856e-06,
+            "BP_0_3": -4.47778920781e-10,
+            "BP_1_0": -0.000501405230204,
+            "BP_1_1": -2.57933995649e-08,
+            "BP_1_2": 4.29361387327e-11,
+            "BP_2_0": -6.51800793813e-06,
+            "BP_2_1": -5.1433518826e-10,
+            "BP_3_0": 4.48218373332e-12
+          },
+          "zodiacalSubtractionApplied": false,
+          "varianceUsedForMaskOnly": true,
+          "quality": {
+            "sourceMaskedFraction": 0.043761293733179545,
+            "maskedFraction": 0.27734375,
+            "wavelengthMinUm": 1.2418374804172343,
+            "wavelengthMaxUm": 1.2491656373182607
+          },
+          "dataUrl": "/observations/epsilon-indi-b-three-dates/frame-3.json",
+          "dataSha256": "d9569384a967b974c8fb5e2e233ebd54384dfd310fed5a5ba64750223fdecb11"
+        }
+      ],
+      "validation": {
+        "reportUrl": "/observations/epsilon-indi-b-three-dates/validation.json",
+        "matchedSources": 3,
+        "residualRmsArcsec": 1.1242819420241892,
+        "medianOffsetArcsec": 1.143762850191408,
+        "differenceBlockers": [
+          "Background/photometric fit is exploratory and has not been validated as a correction",
+          "Native-pixel and calibration covariance are not supplied in the diagonal VARIANCE extension",
+          "Spatially varying recommended ePSF has not been matched"
+        ]
+      },
+      "targetId": "epsilon-indi-b",
+      "targetGuide": {
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A+eps+Ind+B",
+        "note": "The fixed field follows a SIMBAD J2000 proper-motion guide. Predicted shift across these dates: 2.037\u2033; this is a catalog prediction, not measured image motion. Annual parallax, perspective acceleration and binary orbit are not fitted; the guide is approximate.",
+        "positions": [
+          {
+            "observedAt": "2025-04-26T05:09:43.680Z",
+            "ra": 331.09528666206785,
+            "dec": -56.80018113638188
+          },
+          {
+            "observedAt": "2025-06-06T17:22:21.299Z",
+            "ra": 331.09551633785304,
+            "dec": -56.80025891521231
+          },
+          {
+            "observedAt": "2025-10-02T00:30:30.869Z",
+            "ra": 331.0961653710941,
+            "dec": -56.800478703824325
+          }
+        ]
+      },
+      "overlayUrl": "/observations/epsilon-indi-b-three-dates/allwise.json"
+    },
+    {
+      "id": "wise-0855-d2-1",
+      "name": "WISE 0855 field \u00b7 real SPHEREx",
+      "ra": 133.75999231175678,
+      "dec": -7.2422008765726975,
+      "frame": "ICRS",
+      "coordinateEpoch": "ICRS fixed field at midpoint proper-motion guide position; no observer parallax correction",
+      "sourceKind": "observation",
+      "status": "ready",
+      "sourceRelease": "SPHEREx Quick Release 2 (IRSA)",
+      "sourceDoi": "https://doi.org/10.26131/IRSA652",
+      "credit": "SPHEREx / NASA / JPL-Caltech; served by Caltech/IPAC IRSA",
+      "acknowledgementUrl": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_qr.html",
+      "width": 64,
+      "height": 64,
+      "pixelScaleArcsec": 6.15,
+      "commonDisplay": {
+        "min": 0.20000840894368974,
+        "max": 2.4871257187081754,
+        "unit": "MJy/sr"
+      },
+      "alignment": {
+        "method": "Astropy celestial WCS with SIP distortion; bilinear reprojection onto one ICRS TAN grid",
+        "orientation": "north-up, east-left",
+        "rowOrder": "north-to-south",
+        "residualAstrometryArcsec": 0.755594043983165,
+        "wcsHeader": {
+          "WCSAXES": 2,
+          "CRPIX1": 32.5,
+          "CRPIX2": 32.5,
+          "CDELT1": -0.0017083333333333,
+          "CDELT2": 0.0017083333333333,
+          "CUNIT1": "deg",
+          "CUNIT2": "deg",
+          "CTYPE1": "RA---TAN",
+          "CTYPE2": "DEC--TAN",
+          "CRVAL1": 133.75999231176,
+          "CRVAL2": -7.2422008765727,
+          "LONPOLE": 180.0,
+          "LATPOLE": -7.2422008765727,
+          "MJDREF": 0.0,
+          "RADESYS": "ICRS"
+        }
+      },
+      "quality": {
+        "commonValidFraction": 0.839599609375,
+        "wavelengthDifferenceAtTargetUm": 8.95627544970079e-05,
+        "maxWavelengthDifferenceBandwidthFraction": 0.25,
+        "maxKeptWavelengthDifferenceUm": 0.00045249573072347893,
+        "motionMeasured": false,
+        "significanceVerified": false,
+        "scientificDifferencingReady": false,
+        "differenceBlockers": [
+          "Background/photometric fit is exploratory and has not been validated as a correction",
+          "Native-pixel and calibration covariance are not supplied in the diagonal VARIANCE extension",
+          "Spatially varying recommended ePSF has not been matched"
+        ]
+      },
+      "warnings": [
+        "Real SPHEREx quick-release observations. Calibration and image-quality artifacts may remain.",
+        "Each detector pixel has its own wavelength. The pair uses nearby, not identical, effective wavelengths; incompatible pixels are masked.",
+        "Wavelengths use the pinned CWAVE/CBAND spectral calibration product, matched to every exposure. No 102-channel spectrum is inferred from a single frame.",
+        "Both frames use the same MJy/sr display range. No independent per-frame brightness normalization is applied. Zodiacal background has not been subtracted.",
+        "Independent compact-source centroid fits and PSF/noise diagnostics are documented in the linked numerical report. These are visual-comparison checks, not a significant-change measurement.",
+        "Reprojection interpolates pixels and correlates noise. This viewer does not establish statistically significant motion or variability."
+      ],
+      "interpretation": "Inspect actual SPHEREx pixels around WISE 0855. The target itself has not been independently identified or measured in these frames. No significant motion or brightness change is claimed. This 1.41 \u03bcm field does not establish detection of the very cold brown dwarf; no longer-wavelength comparison has been validated.",
+      "documentationUrls": [
+        "https://caltech-ipac.github.io/irsa-tutorials/spherex-intro/",
+        "https://caltech-ipac.github.io/spherex-archive-documentation/spherex-data-access/",
+        "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/SPHEREx_Expsupp_QR.pdf"
+      ],
+      "frames": [
+        {
+          "id": "2025W45_2A_0292_2",
+          "observedAt": "2025-11-07T20:31:27.241Z",
+          "mjd": 60986.8551764,
+          "wavelengthUm": 1.4129447968976525,
+          "bandwidthUm": 0.03414359551469204,
+          "detector": 2,
+          "processingVersion": "6.4+psffix1",
+          "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W45_2A/l2b-v20-2025-314/2/level2_2025W45_2A_0292_2D2_spx_l2b-v20-2025-314.fits",
+          "sha256": "9102885d487a3b67a08794ca22eac1c0386ef979ed367cd1c3205940eefad346",
+          "spectralCalibration": {
+            "method": "CWAVE/CBAND; bilinear interpolation at zero-based detector coordinates [y,x]",
+            "sourceUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/spectral_wcs/cal-wcs-v4-2025-254/2/spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+            "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+            "orientation": "sky",
+            "association": "Pinned product; X/Y/VALUES lookup table exactly matches exposure"
+          },
+          "extensions": {
+            "IMAGE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "FLAGS": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": ""
+            },
+            "VARIANCE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy2 / sr2"
+            },
+            "ZODI": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "PSF": {
+              "shape": [
+                121,
+                101,
+                101
+              ],
+              "unit": ""
+            },
+            "WCS-WAVE": {
+              "shape": [
+                1
+              ],
+              "unit": null
+            }
+          },
+          "sourceWcsHeader": {
+            "WCSAXES": 2,
+            "CRPIX1": 1020.5,
+            "CRPIX2": 1020.5,
+            "PC1_1": -0.0016133856353,
+            "PC1_2": 0.000544324437664,
+            "PC2_1": 0.000546062875873,
+            "PC2_2": 0.00161565982734,
+            "CDELT1": 1.0,
+            "CDELT2": 1.0,
+            "CUNIT1": "deg",
+            "CUNIT2": "deg",
+            "CTYPE1": "RA---TAN-SIP",
+            "CTYPE2": "DEC--TAN-SIP",
+            "CRVAL1": 135.002249168,
+            "CRVAL2": -7.2269069917,
+            "LONPOLE": 180.0,
+            "LATPOLE": -7.2269069917,
+            "TIMESYS": "UTC",
+            "MJDREF": 0.0,
+            "DATE-OBS": "2025-11-07T20:31:27.241",
+            "MJD-OBS": 60986.8551764,
+            "DATE-BEG": "2025-11-07T20:31:27.241",
+            "MJD-BEG": 60986.8551764,
+            "DATE-AVG": "2025-11-07T20:32:24.800",
+            "MJD-AVG": 60986.85584259,
+            "DATE-END": "2025-11-07T20:33:22.359",
+            "MJD-END": 60986.856508779,
+            "XPOSURE": 113.5826,
+            "TELAPSE": 118.1873,
+            "RADESYS": "ICRS",
+            "A_ORDER": 3,
+            "A_0_0": 0.100411755901,
+            "A_0_1": 0.000222697189645,
+            "A_0_2": -1.64511624802e-08,
+            "A_0_3": -1.64987396002e-11,
+            "A_1_0": 0.000133575163107,
+            "A_1_1": 3.95222806324e-06,
+            "A_1_2": 6.11159530665e-10,
+            "A_2_0": -3.85286689593e-08,
+            "A_2_1": 9.65857398255e-12,
+            "A_3_0": 5.75465350943e-10,
+            "B_ORDER": 3,
+            "B_0_0": -0.93956361752,
+            "B_0_1": 0.00142407039389,
+            "B_0_2": 1.95565197985e-06,
+            "B_0_3": 4.8963549674e-10,
+            "B_1_0": -0.00121837048316,
+            "B_1_1": 3.48668023576e-08,
+            "B_1_2": -1.11578450287e-11,
+            "B_2_0": 6.55270762805e-06,
+            "B_2_1": 6.07358075307e-10,
+            "B_3_0": 3.08620362454e-11,
+            "AP_ORDER": 3,
+            "AP_0_0": -0.100555005886,
+            "AP_0_1": -0.000221898341808,
+            "AP_0_2": 1.75286544727e-08,
+            "AP_0_3": 1.64685710635e-11,
+            "AP_1_0": -0.000138493789283,
+            "AP_1_1": -3.92834634324e-06,
+            "AP_1_2": -5.83666968334e-10,
+            "AP_2_0": 3.53011387424e-08,
+            "AP_2_1": -1.10933611204e-11,
+            "AP_3_0": -5.47382017366e-10,
+            "BP_ORDER": 3,
+            "BP_0_0": 0.933151173851,
+            "BP_0_1": -0.00142685038155,
+            "BP_0_2": -1.93509939423e-06,
+            "BP_0_3": -4.77570047165e-10,
+            "BP_1_0": 0.00121772656753,
+            "BP_1_1": -4.10862466439e-08,
+            "BP_1_2": 9.01165434267e-12,
+            "BP_2_0": -6.52262810536e-06,
+            "BP_2_1": -5.26344762985e-10,
+            "BP_3_0": -3.23116804399e-11
+          },
+          "zodiacalSubtractionApplied": false,
+          "varianceUsedForMaskOnly": true,
+          "quality": {
+            "sourceMaskedFraction": 0.02525735294117647,
+            "maskedFraction": 0.160400390625,
+            "wavelengthMinUm": 1.4009381686268607,
+            "wavelengthMaxUm": 1.4249434143754076
+          },
+          "dataUrl": "/observations/wise-0855-d2-1/frame-1.json",
+          "dataSha256": "9dd301cf0852455755ba19955b84a2d75db73b381b5c1db2f71462c9f3c078e0"
+        },
+        {
+          "id": "2025W50_2A_0479_1",
+          "observedAt": "2025-12-13T05:32:45.700Z",
+          "mjd": 61022.231084491,
+          "wavelengthUm": 1.4128552341431555,
+          "bandwidthUm": 0.03397560952104552,
+          "detector": 2,
+          "processingVersion": "6.4+psffix1",
+          "sourceUrl": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W50_2A/l2b-v20-2025-349/2/level2_2025W50_2A_0479_1D2_spx_l2b-v20-2025-349.fits",
+          "sha256": "1f611d267fd5ff318a358a6d1fe0f82b42e2d41016eab1c4e2df42511d244dbe",
+          "spectralCalibration": {
+            "method": "CWAVE/CBAND; bilinear interpolation at zero-based detector coordinates [y,x]",
+            "sourceUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/spectral_wcs/cal-wcs-v4-2025-254/2/spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+            "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+            "orientation": "sky",
+            "association": "Pinned product; X/Y/VALUES lookup table exactly matches exposure"
+          },
+          "extensions": {
+            "IMAGE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "FLAGS": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": ""
+            },
+            "VARIANCE": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy2 / sr2"
+            },
+            "ZODI": {
+              "shape": [
+                2040,
+                2040
+              ],
+              "unit": "MJy / sr"
+            },
+            "PSF": {
+              "shape": [
+                121,
+                101,
+                101
+              ],
+              "unit": ""
+            },
+            "WCS-WAVE": {
+              "shape": [
+                1
+              ],
+              "unit": null
+            }
+          },
+          "sourceWcsHeader": {
+            "WCSAXES": 2,
+            "CRPIX1": 1020.5,
+            "CRPIX2": 1020.5,
+            "PC1_1": -0.0016122126367,
+            "PC1_2": 0.000545967976671,
+            "PC2_1": 0.000546479766206,
+            "PC2_2": 0.00161670541554,
+            "CDELT1": 1.0,
+            "CDELT2": 1.0,
+            "CUNIT1": "deg",
+            "CUNIT2": "deg",
+            "CTYPE1": "RA---TAN-SIP",
+            "CTYPE2": "DEC--TAN-SIP",
+            "CRVAL1": 134.992288256,
+            "CRVAL2": -7.22300174306,
+            "LONPOLE": 180.0,
+            "LATPOLE": -7.22300174306,
+            "TIMESYS": "UTC",
+            "MJDREF": 0.0,
+            "DATE-OBS": "2025-12-13T05:32:45.700",
+            "MJD-OBS": 61022.231084491,
+            "DATE-BEG": "2025-12-13T05:32:45.700",
+            "MJD-BEG": 61022.231084491,
+            "DATE-AVG": "2025-12-13T05:33:43.259",
+            "MJD-AVG": 61022.23175068,
+            "DATE-END": "2025-12-13T05:34:40.818",
+            "MJD-END": 61022.232416869,
+            "XPOSURE": 113.5826,
+            "TELAPSE": 118.1873,
+            "RADESYS": "ICRS",
+            "A_ORDER": 3,
+            "A_0_0": -0.0259563975576,
+            "A_0_1": 0.000910617661509,
+            "A_0_2": -1.60638158402e-08,
+            "A_0_3": -2.56007517937e-11,
+            "A_1_0": 0.000697145335623,
+            "A_1_1": 3.96793946965e-06,
+            "A_1_2": 6.14676535087e-10,
+            "A_2_0": -2.03004211436e-08,
+            "A_2_1": 1.9017780299e-11,
+            "A_3_0": 5.81617502932e-10,
+            "B_ORDER": 3,
+            "B_0_0": -1.25072323665,
+            "B_0_1": 0.000536603621376,
+            "B_0_2": 1.96214899157e-06,
+            "B_0_3": 4.80274384799e-10,
+            "B_1_0": -0.00162366957223,
+            "B_1_1": 2.54167660599e-08,
+            "B_1_2": 1.64685248885e-13,
+            "B_2_0": 6.54437427356e-06,
+            "B_2_1": 5.98577071542e-10,
+            "B_3_0": 5.00788979377e-12,
+            "AP_ORDER": 3,
+            "AP_0_0": 0.0248628815191,
+            "AP_0_1": -0.000909512479449,
+            "AP_0_2": 2.11138901683e-08,
+            "AP_0_3": 2.62857910637e-11,
+            "AP_1_0": -0.000704042929528,
+            "AP_1_1": -3.94332004749e-06,
+            "AP_1_2": -5.87266173027e-10,
+            "AP_2_0": 1.96943656089e-08,
+            "AP_2_1": -1.92323261351e-11,
+            "AP_3_0": -5.52181629499e-10,
+            "BP_ORDER": 3,
+            "BP_0_0": 1.24517216314,
+            "BP_0_1": -0.000543545383286,
+            "BP_0_2": -1.94728187768e-06,
+            "BP_0_3": -4.69891672099e-10,
+            "BP_1_0": 0.00162130044864,
+            "BP_1_1": -2.6217416355e-08,
+            "BP_1_2": -2.44296387595e-12,
+            "BP_2_0": -6.51298614056e-06,
+            "BP_2_1": -5.17832788183e-10,
+            "BP_3_0": -6.89959228086e-12
+          },
+          "zodiacalSubtractionApplied": false,
+          "varianceUsedForMaskOnly": true,
+          "quality": {
+            "sourceMaskedFraction": 0.02864066705113418,
+            "maskedFraction": 0.160400390625,
+            "wavelengthMinUm": 1.400804129882911,
+            "wavelengthMaxUm": 1.4247686438450824
+          },
+          "dataUrl": "/observations/wise-0855-d2-1/frame-2.json",
+          "dataSha256": "570ee1958ae07b6218ec72975e564ec807a0722867458536d6ed2d49e0330aee"
+        }
+      ],
+      "validation": {
+        "reportUrl": "/observations/wise-0855-d2-1/validation.json",
+        "matchedSources": 16,
+        "residualRmsArcsec": 0.755594043983165,
+        "medianOffsetArcsec": 0.04521120588496778,
+        "differenceBlockers": [
+          "Background/photometric fit is exploratory and has not been validated as a correction",
+          "Native-pixel and calibration covariance are not supplied in the diagonal VARIANCE extension",
+          "Spatially varying recommended ePSF has not been matched"
+        ]
+      },
+      "targetId": "wise-0855",
+      "targetGuide": {
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=WISEA+J085510.74-071442.5",
+        "note": "The fixed field follows a SIMBAD J2000 proper-motion guide. Predicted shift across these dates: 0.790\u2033; this is a catalog prediction, not measured image motion. Annual parallax, perspective acceleration and binary orbit are not fitted; the guide is approximate.",
+        "positions": [
+          {
+            "observedAt": "2025-11-07T20:31:27.241Z",
+            "ra": 133.7601024688004,
+            "dec": -7.242209946578649
+          },
+          {
+            "observedAt": "2025-12-13T05:32:45.700Z",
+            "ra": 133.75988215471313,
+            "dec": -7.242191806566746
+          }
+        ]
+      },
+      "overlayUrl": "/observations/wise-0855-d2-1/allwise.json"
+    }
+  ]
+}
